@@ -24,3 +24,11 @@ body {
 .flex {
 	display: flex;
 }
+
+@font-face {
+	font-family: 'Montserrat-SemiBold.woff';
+	src: local('Montserrat-SemiBold'), local('Montserrat-SemiBold'),
+		url('/assets/font/Montserrat-SemiBold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
