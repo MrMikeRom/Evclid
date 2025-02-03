@@ -3,12 +3,14 @@
     height: 100%;
 }
 
+
+/* <------ ХЕДЕР / Заголовок сайта ------> */
 .header {
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    height: 100px;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.25);
+    height: 100%;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.25);
 }
 
 .header__logo {
@@ -23,32 +25,25 @@
     list-style-type: none;
     font-weight: 600;
     font-size: 18px;
-    color: #333;
+    color: var(--dark-gray);
     gap: 85px;
     justify-content: flex-end;
     font-family: 'Montserrat-SemiBold', sans-serif;
 }
 
-.nav__item1 {
-    width: 54px;
-}
-
-.nav__item2 {
-    width: 86px;
-}
-
-.nav__item3 {
-    width: 60px;
-}
-
-.nav__item4 {
-    width: 76px;
-}
-
-.nav__item5 {
-    width: 92px;
-}
-
 .header__search {
     margin-right: 76px;
 }
+/* <---------- X ----------> */
+
+
+/* <------ РАЗДЕЛ ЗАКАЗЫ ------> */
+.order {
+    width: 1770px;
+    justify-content: flex-start;
+    background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(/assets/img/balconies.png);
+    height: 100%;
+    flex-direction: column;
+}
+
+/* <---------- X ----------> */

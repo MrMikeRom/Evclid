@@ -8,6 +8,12 @@ html {
 	box-sizing: inherit;
 }
 
+:root {
+	--dark-gray: #333;
+	--btn-color: #FF9900;
+	--white: #FFFFFF;
+}
+
 a {
 	color: inherit;
 	text-decoration: none;
@@ -23,6 +29,18 @@ body {
 
 .flex {
 	display: flex;
+}
+
+.btn {
+	padding: 18px 37px;
+	width: 280px;
+	height: 78px;
+    color: var(--white);
+	background-color: #FF9900;
+	font-weight: 700;
+	font-size: 23px;
+	text-align: center;
+	
 }
 
 @font-face {
