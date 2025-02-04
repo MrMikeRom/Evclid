@@ -40,6 +40,8 @@ body {
 	font-weight: 700;
 	font-size: 23px;
 	text-align: center;
+	border: 0;
+	font-family: 'Montserrat-ExtraBold', sans-serif;
 	
 }
 
@@ -47,6 +49,14 @@ body {
 	font-family: 'Montserrat-SemiBold.woff';
 	src: local('Montserrat-SemiBold'), local('Montserrat-SemiBold'),
 		url('/assets/font/Montserrat-SemiBold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat-ExtraBold.woff';
+	src: local('Montserrat-ExtraBold'), local('Montserrat-ExtraBold'),
+		url('/assets/font/Montserrat-ExtraBold.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
