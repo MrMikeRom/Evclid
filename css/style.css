@@ -23,7 +23,7 @@
     align-items: center;
     justify-content: space-between;
     list-style-type: none;
-    font-weight: 600;
+    font-weight: 600px;
     font-size: 18px;
     color: var(--dark-gray);
     gap: 85px;
@@ -52,10 +52,12 @@
 }
 
 .order__title {
-    font-weight: 800;
+    font-weight: 800px;
     font-size: 70px;
+    line-height: 85px;
     color: var(--white);
     width: 840px;
+    height: 100%;
     margin-top: 100px;
     margin-left: 80px;
     margin-bottom: 0;
@@ -63,16 +65,28 @@
 }
 
 .order__text {
-    width: 790px;
-    font-weight: 700;
+    width: 800px;
+    height: 100%;
+    font-weight: 700px;
     font-size: 24px;
     color: var(--white);
     margin-left: 80px;
     margin-bottom: 0;
+    margin-top: 24px;
     font-family: 'Montserrat-ExtraBold', sans-serif;
 }
 
 .order__btn {
+    padding: 18px 37px;
+	width: 280px;
+	height: 78px;
+    color: var(--white);
+	background-color: #FF9900;
+	font-weight: 700px;
+	font-size: 23px;
+	text-align: center;
+	border: 0;
+	font-family: 'Montserrat-ExtraBold', sans-serif;
     margin-top: 90px;
     margin-left: 80px;
     margin-bottom: 55px;
@@ -80,6 +94,8 @@
 
 .order__bullets {
     align-items: center;
+    margin-bottom: 30px;
+    margin: 0 auto;
     margin-bottom: 30px;
 }
 /* <---------- X ----------> */
