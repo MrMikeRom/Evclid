@@ -46,3 +46,11 @@ body {
 	font-weight: normal;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'Montserrat-Regular.woff';
+	src: local('Montserrat-Regular'), local('Montserrat-Regular'),
+		url('/assets/font/Montserrat-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

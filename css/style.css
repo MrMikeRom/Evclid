@@ -23,7 +23,7 @@
     align-items: center;
     justify-content: space-between;
     list-style-type: none;
-    font-weight: 600px;
+    font-weight: 600;
     font-size: 18px;
     color: var(--dark-gray);
     gap: 85px;
@@ -52,7 +52,7 @@
 }
 
 .order__title {
-    font-weight: 800px;
+    font-weight: 800;
     font-size: 70px;
     line-height: 85px;
     color: var(--white);
@@ -67,7 +67,7 @@
 .order__text {
     width: 800px;
     height: 100%;
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 24px;
     color: var(--white);
     margin-left: 80px;
@@ -82,7 +82,7 @@
 	height: 78px;
     color: var(--white);
 	background-color: #FF9900;
-	font-weight: 700px;
+	font-weight: 700;
 	font-size: 23px;
 	text-align: center;
 	border: 0;
@@ -102,5 +102,42 @@
 
 
 
-/* <------  ------> */
+/* <------ РАЗДЕЛ "О НАС" / "ABOUT US" ------> */
+.about-us {
+    margin-top: 135px;
+    height: 100%;
+}
+.about-us__title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 52px;
+    color: var(--dark-gray);
+    margin-left: 77px;
+    width: 141px;
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+
+.about-us__text{
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.7;
+    font-size: 18.5px;
+    color: var(--dark-gray);
+    width: 1235px;
+    margin-left: 75px;
+    margin-top: 20px;
+    font-family: 'Montserrat-Regular', sans-serif;
+
+}
+
+.about-us__cards {
+    margin-top: 50px;
+    margin-left: 75px;
+}
+
+.about-us__left-card {
+    width: 868px;
+    height: 622px;
+    background-image: url(/assets/img/Rectangle.svg);
+}
 /* <---------- X ----------> */
