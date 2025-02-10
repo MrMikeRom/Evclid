@@ -136,8 +136,45 @@
 }
 
 .about-us__left-card {
+    position: relative;
     width: 868px;
     height: 622px;
     background-image: url(/assets/img/Rectangle.svg);
+}
+
+.left-card__black-frame {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    background-image: url(/assets/img/Rectangle2.svg);
+    fill: rgba(0, 0, 0, 0.5);
+    width: 868px;
+    height: 196px;
+}
+
+.left-card__text{
+    width: 454px;
+    color: var(--white);
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+    font-weight: 720;
+    font-size: 17px;
+    line-height: 200%;
+    margin: 50px 0 50px 50px;
+}
+
+.left-card__btn {
+    position: absolute;
+    bottom: 68px;
+    right: 50px;
+    background-color: transparent;
+    border: 3px solid var(--btn-color);
+    padding: 19px 38px;
+    width: 175px;
+    height: 60px;
+    color: var(--white);
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
 }
 /* <---------- X ----------> */
