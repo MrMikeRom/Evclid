@@ -133,6 +133,7 @@
 .about-us__cards {
     margin-top: 50px;
     margin-left: 75px;
+    gap: 32px;
 }
 
 .about-us__left-card {
@@ -176,5 +177,51 @@
     font-weight: 700;
     font-size: 16px;
     text-align: center;
+}
+
+.about-us__right-cards {
+    gap: 32px;
+    flex-flow: column;
+}
+
+.about-us__two-card {
+    width: 870px;
+    height: 295px;
+    border: 1px solid var(--stroke);
+}
+
+.two-card__img {
+    background-image: url(/assets/img/cube.svg);
+    background-size: cover;
+    width: 190px;
+    height: 165px;
+    margin: 65px 0 65px 60px;
+}
+
+.two-card__info {
+    margin-top: 65px;
+    margin-left: 50px;
+}
+
+.two-card__title {
+
+}
+
+.about-us__three-card {
+    width: 870px;
+    height: 295px;
+    border: 1px solid var(--stroke);
+}
+
+.three-card__img {
+    background-image: url(/assets/img/gear.svg);
+    background-size: cover;
+    width: 190px;
+    height: 165px;
+    margin: 65px 0 65px 60px;
+}
+
+.three-card__title {
+
 }
 /* <---------- X ----------> */
