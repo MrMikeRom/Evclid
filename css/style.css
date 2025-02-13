@@ -28,7 +28,7 @@
     color: var(--dark-gray);
     gap: 85px;
     justify-content: flex-end;
-    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header__search {
@@ -61,7 +61,7 @@
     margin-top: 100px;
     margin-left: 80px;
     margin-bottom: 0;
-    font-family: 'Montserrat-ExtraBold', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .order__text {
@@ -73,7 +73,7 @@
     margin-left: 80px;
     margin-bottom: 0;
     margin-top: 24px;
-    font-family: 'Montserrat-ExtraBold', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .order__btn {
@@ -86,7 +86,7 @@
 	font-size: 23px;
 	text-align: center;
 	border: 0;
-	font-family: 'Montserrat-ExtraBold', sans-serif;
+	font-family: 'Montserrat', sans-serif;
     margin-top: 90px;
     margin-left: 80px;
     margin-bottom: 55px;
@@ -114,7 +114,7 @@
     color: var(--dark-gray);
     margin-left: 77px;
     width: 141px;
-    font-family: 'Montserrat-Regular', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .about-us__text{
@@ -126,7 +126,7 @@
     width: 1235px;
     margin-left: 75px;
     margin-top: 20px;
-    font-family: 'Montserrat-Regular', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -156,8 +156,8 @@
 .left-card__text{
     width: 454px;
     color: var(--white);
-    font-family: 'Montserrat-ExtraBold', sans-serif;
-    font-weight: 720;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     font-size: 17px;
     line-height: 200%;
     margin: 50px 0 50px 50px;
@@ -173,7 +173,7 @@
     width: 175px;
     height: 60px;
     color: var(--white);
-    font-family: 'Montserrat-ExtraBold', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 16px;
     text-align: center;
@@ -196,15 +196,32 @@
     width: 190px;
     height: 165px;
     margin: 65px 0 65px 60px;
+    position: absolute;
 }
 
 .two-card__info {
+    position: relative;
     margin-top: 65px;
-    margin-left: 50px;
+    margin-left: 300px;
 }
 
 .two-card__title {
+    font-family: 'Montserrat', sans-serif;
+    width: 452px;
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--dark-gray);
+    margin: 0;
+}
 
+.two-card__text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 8px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--dark-gray);
 }
 
 .about-us__three-card {
@@ -216,12 +233,24 @@
 .three-card__img {
     background-image: url(/assets/img/gear.svg);
     background-size: cover;
+    position: absolute;
     width: 190px;
     height: 165px;
     margin: 65px 0 65px 60px;
 }
 
 .three-card__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--dark-gray);
+    width: 406px;
+}
 
+.three-card__text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--dark-gray);
 }
 /* <---------- X ----------> */
