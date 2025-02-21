@@ -1,6 +1,7 @@
 .container {
     max-width: 1920px;
     height: 100%;
+    font-family: var(--font);
 }
 
 
@@ -27,7 +28,6 @@
     color: var(--dark-gray);
     gap: 85px;
     padding-left: 0;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .header__search {
@@ -65,7 +65,6 @@
     margin-top: 100px;
     margin-left: 80px;
     margin-bottom: 0;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .order__text {
@@ -78,7 +77,6 @@
     margin-left: 80px;
     margin-bottom: 0;
     margin-top: 22px;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .order__btn {
@@ -86,12 +84,11 @@
 	width: 280px;
 	height: 78px;
     color: var(--white);
-	background-color: #FF9900;
+	background-color: var(--btn-color);
 	font-weight: 700;
 	font-size: 23.3px;
 	text-align: center;
 	border: 0;
-	font-family: 'Montserrat', sans-serif;
     margin-top: 90px;
     margin-left: 80px;
     margin-bottom: 55px;
@@ -119,7 +116,6 @@
     color: var(--dark-gray);
     margin-left: 77px;
     width: 141px;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .about-us__text{
@@ -131,7 +127,6 @@
     margin-left: 75px;
     margin-top: 20px;
     line-height: 2.05;
-    font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -161,7 +156,6 @@
 .left-card__text{
     width: 454px;
     color: var(--white);
-    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 200%;
@@ -177,7 +171,6 @@
     width: 175px;
     height: 60px;
     color: var(--white);
-    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 16px;
     text-align: center;
@@ -210,7 +203,6 @@
 }
 
 .two-card__title {
-    font-family: 'Montserrat', sans-serif;
     width: 452px;
     font-weight: 700;
     font-size: 24px;
@@ -219,7 +211,6 @@
 }
 
 .two-card__text {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     margin: 0;
     margin-top: 8px;
@@ -245,7 +236,6 @@
 }
 
 .three-card__title {
-    font-family: 'Montserrat', sans-serif;
     margin: 0;
     font-weight: 700;
     font-size: 24px;
@@ -254,7 +244,6 @@
 }
 
 .three-card__text {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: var(--dark-gray);
@@ -273,7 +262,6 @@
 }
 
 .schedule__title {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 48px;
     color: var(--dark-gray);
@@ -284,7 +272,6 @@
 }
 
 .schedule__steps {
-    font-family: 'Montserrat', sans-serif;
     margin-top: 50px;
     margin-left: 75px;
     gap: 71px;
@@ -299,7 +286,6 @@
 
 .schedule__consultation {
     width: 1770px;
-    font-family: 'Montserrat', sans-serif;
     margin-top: 45px;
     margin-left: 75px;
     gap: 142px;
@@ -319,7 +305,6 @@
 .consultation__text {
     margin: 0;
     margin-top: 8px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 200%;
@@ -328,7 +313,6 @@
 .consultation__btn {
     margin-top: 50px;
     gap: 32px;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .consultation__btn--details {
@@ -342,7 +326,7 @@
 }
 
 .consultation__btn--contract {
-    border: 1px solid #333;
+    border: 1px solid var(--dark-gray);
     padding: 20px 38px;
     width: 147px;
     color: var(--dark-gray);
@@ -358,5 +342,21 @@
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 10px;
+}
+/* <---------- X ----------> */
+
+
+
+/* <------ РАЗДЕЛ "ВОПРОСЫ" / "questions" (аккордеон) ------> */
+.ac-container {
+    margin-top: 100px;
+    margin-left: 75px;
+    width: 1770px;
+}
+
+.ac__title {
+    font-weight: 400;
+    font-size: 48px;
+    color: var(--dark-gray);
 }
 /* <---------- X ----------> */
