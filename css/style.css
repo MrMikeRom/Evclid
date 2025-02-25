@@ -94,6 +94,25 @@
     margin-bottom: 55px;
 }
 
+
+/* СТИЛИЗАЦИЯ КНОПКИ РАЗДЕЛА "ЗАКАЗЫ" */
+.order__btn:focus-visible {
+    outline: none;
+    background-color: rgba(255, 153, 0, 0.7);
+}
+
+.order__btn:hover {
+    outline: none;
+    background-color: rgba(255, 153, 0, 0.7);
+}
+
+.order__btn:active {
+    border: none;
+    background-color: var(--btn-activ);
+}
+/* -------------------- */
+
+
 .order__bullets {
     align-items: center;
     margin-bottom: 30px;
@@ -174,7 +193,27 @@
     font-weight: 700;
     font-size: 16px;
     text-align: center;
+    transition: .2s ease-in-out;
 }
+
+
+/* СТИЛИЗАЦИЯ КНОПКИ РАЗДЕЛА "О НАС" */
+.left-card__btn:focus-visible {
+    outline: none;
+    background-color: var(--btn-color);
+}
+
+.left-card__btn:hover {
+    outline: none;
+    background-color: var(--btn-color);
+}
+
+.left-card__btn:active {
+    border: none;
+    background-color: var(--btn-activ);
+}
+/* -------------------- */
+
 
 .about-us__right-cards {
     gap: 32px;
@@ -325,6 +364,25 @@
     text-align: center;
 }
 
+
+/* СТИЛИЗАЦИЯ КНОПКИ РАЗДЕЛА "РАСПИСАНИЕ" */
+.consultation__btn--details:focus-visible {
+    outline: none;
+    background-color: rgba(255, 153, 0, 0.7);
+}
+
+.consultation__btn--details:hover {
+    outline: none;
+    background-color: rgba(255, 153, 0, 0.7);
+}
+
+.consultation__btn--details:active {
+    border: none;
+    background-color: var(--btn-activ);
+}
+/* -------------------- */
+
+
 .consultation__btn--contract {
     border: 1px solid var(--dark-gray);
     padding: 20px 38px;
@@ -334,6 +392,28 @@
     font-size: 16px;
     text-align: center;
 }
+
+
+/* СТИЛИЗАЦИЯ КНОПКИ РАЗДЕЛА "РАСПИСАНИЕ" */
+.consultation__btn--contract:focus-visible {
+    background-color: var(--btn-grey);
+    color: var(--white);
+    border: none;
+    outline: inherit;
+}
+
+.consultation__btn--contract:hover {
+    border: none;
+    background-color: var(--btn-grey);
+    color: var(--white);
+}
+
+.consultation__btn--contract:active {
+    border: none;
+    background-color: var(--btn-black);
+}
+/* -------------------- */
+
 
 .consultation__img {
     background-image: url(/assets/img/consultation.svg);
@@ -411,16 +491,6 @@
 
 .faq__input:checked ~ .faq__text {
     display: block;
-}
-
-.faq__title--img::before {
-    content: "";
-    transform: rotate(45deg);
-}
-
-.faq__title--img::after {
-    content: "";
-    transform: rotate(45deg);
 }
 
 .faq__text {

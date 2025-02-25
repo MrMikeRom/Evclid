@@ -47,6 +47,9 @@ html {
 :root {
 	--dark-gray: #333;
 	--btn-color: #FF9900;
+	--btn-activ: #e1670e;
+	--btn-grey: #666;
+	--btn-black: #000;
 	--white: #FFFFFF;
 	--stroke: #CACACA;
 	--border: #cacaca;
