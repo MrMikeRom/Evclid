@@ -370,16 +370,17 @@
 }
 
 .faq__title {
-    display: block;
+    display: flex;
     cursor: pointer;
     font-weight: 700;
     font-size: 24px;
     line-height: 133%;
     color: var(--dark-gray);
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     padding-top: 40px;
-    transition: .20s ease-in-out;
+    transition: .2s ease-in-out;
     position: relative;
+    justify-content: space-between;
 }
 
 .faq__title:hover {
@@ -410,6 +411,16 @@
 
 .faq__input:checked ~ .faq__text {
     display: block;
+}
+
+.faq__title--img::before {
+    content: "";
+    transform: rotate(45deg);
+}
+
+.faq__title--img::after {
+    content: "";
+    transform: rotate(45deg);
 }
 
 .faq__text {
