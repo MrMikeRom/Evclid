@@ -1,5 +1,6 @@
 .container {
     max-width: 1920px;
+    margin: 0 auto;
     height: 100%;
     font-family: var(--font);
 }
@@ -29,6 +30,33 @@
     gap: 85px;
     padding-left: 0;
 }
+
+.nav__item {
+    transition: .2s ease-in-out;
+}
+
+.nav__item-link {
+    outline: none;
+}
+
+
+/* СТИЛИЗАЦИЯ КНОПКИ РАЗДЕЛА "НАВИГАЦИЯ" */
+.nav__item-link:focus-visible {
+    border-bottom: 3px solid var(--btn-color);
+    padding-bottom: 1px;
+}
+
+.nav__item-link:hover {
+    border: 3px solid var(--btn-color);
+    padding: 5px;
+}
+
+.nav__item-link:active {
+    border-bottom: 2px solid var(--btn-color);
+    color: var(--btn-color);
+}
+/* -------------------- */
+
 
 .header__search {
     margin-right: 59px;
@@ -92,6 +120,7 @@
     margin-top: 90px;
     margin-left: 80px;
     margin-bottom: 55px;
+    transition: .2s ease-in-out;
 }
 
 
@@ -362,6 +391,8 @@
     font-weight: 700;
     font-size: 16px;
     text-align: center;
+    min-height: 60px;
+    transition: .2s ease-in-out;
 }
 
 
@@ -391,6 +422,8 @@
     font-weight: 400;
     font-size: 16px;
     text-align: center;
+    min-height: 60px;
+    transition: .2s ease-in-out;
 }
 
 
@@ -491,6 +524,10 @@
 
 .faq__input:checked ~ .faq__text {
     display: block;
+}
+
+.faq__input:checked ~ .faq__title .faq__title--img {
+    transform: rotate(45deg)
 }
 
 .faq__text {
