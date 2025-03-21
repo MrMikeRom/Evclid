@@ -557,7 +557,8 @@
 .footer__container {
     padding-top: 50px;
     padding-left: 74px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 350px;
 }
 
 .footer__nav {
@@ -575,5 +576,36 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 200%;
+}
+
+.footer__networks {
+    margin-top: 90px;
+    gap: 25px;
+}
+
+.footer__applications {
+    flex-direction: column;
+}
+
+.applications__title {
+    font-weight: 400;
+    font-size: 48px;
+    color: var(--stroke);
+}
+
+.application {
+    background-color: var(--form-color);
+}
+
+
+.footer__info {
+    padding-left: 48px;
+    width: 410px;
+    margin-top: 90px;
+    margin-right: 75px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: var(--stroke);
 }
 /* <---------- X ----------> */
