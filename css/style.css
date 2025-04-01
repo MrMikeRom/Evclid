@@ -37,6 +37,8 @@
 
 .nav__item-link {
     outline: none;
+    border: 3px solid transparent;
+    padding: 5px;
 }
 
 
@@ -48,7 +50,6 @@
 
 .nav__item-link:hover {
     border: 3px solid var(--btn-color);
-    padding: 5px;
 }
 
 .nav__item-link:active {
@@ -68,16 +69,15 @@
 /* <------ РАЗДЕЛ ЗАКАЗЫ ------> */
 .order {
     justify-content: center;
+    max-width: 1770px;
+    width: 100%;
 }
 
 .order__card {
-    width: 1770px;
     justify-content: center;
     background: url(/assets/img/balconies.png);
     height: 100%;
     flex-direction: column;
-    margin-left: 75px;
-    margin-right: 75px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -222,7 +222,9 @@
     font-weight: 700;
     font-size: 16px;
     text-align: center;
-    transition: .2s ease-in-out;
+    transition: background .2s ease-in-out, 
+    border .2s ease-in-out,
+    transform .2s ease-in-out;
 }
 
 
@@ -235,11 +237,13 @@
 .left-card__btn:hover {
     outline: none;
     background-color: var(--btn-color);
+    transform: translateY(2px);
 }
 
 .left-card__btn:active {
-    border: none;
+    border-color: var(--btn-activ);
     background-color: var(--btn-activ);
+    transform: translateY(4px);
 }
 /* -------------------- */
 
