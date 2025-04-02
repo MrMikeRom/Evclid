@@ -45,6 +45,10 @@ html {
 }
 
 :root {
+	--swiper-pagination-color: #FFFFFF;
+	--swiper-theme-color: rgba(255, 255, 255, 0.4);
+	--swiper-pagination-bullet-size: 15px;
+	--swiper-pagination-bullet-horizontal-gap: 11px;
 	--dark-gray: #333;
 	--footer: #222;
 	--btn-color: #FF9900;
