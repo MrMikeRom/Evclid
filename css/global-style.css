@@ -88,3 +88,18 @@ button {
 	background-color: transparent;
 	border: 0;
 }
+
+textarea {
+	resize: none;
+}
+
+textarea::placeholder {
+	color: var(--stroke);
+	padding-left: 27px;
+	padding-top: 20px;
+}
+
+input::placeholder {
+	color: var(--stroke);
+	padding-left: 27px;
+}

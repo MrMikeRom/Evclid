@@ -560,8 +560,8 @@
 .footer__container {
     padding-top: 50px;
     padding-left: 74px;
-    /* justify-content: space-between; */
-    gap: 350px;
+    justify-content: space-between;
+    /* gap: 350px; */
 }
 
 .footer__nav {
@@ -579,26 +579,64 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 200%;
+    width: 252px;
 }
 
 .footer__networks {
     margin-top: 90px;
     gap: 25px;
+    margin-bottom: 50px;
 }
 
+/* -------------------- */
 .footer__applications {
     flex-direction: column;
+    padding-left: 165px;
 }
 
 .applications__title {
     font-weight: 400;
     font-size: 48px;
     color: var(--stroke);
+    width: 408px;
+    margin-bottom: 25px;
 }
 
-.application {
-    background-color: var(--form-color);
+.applications__form {
+    flex-direction: column;
+    gap: 25px;
 }
+
+.application__name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    width: 570px;
+    height: 60px;
+    background-color: var(--form-color);
+    border: none;
+}
+
+.application__email {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    width: 570px;
+    height: 60px;
+    background-color: var(--form-color);
+    border: none;
+}
+
+.application__message {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    width: 570px;
+    height: 150px;
+    background-color: var(--form-color);
+    border: none;
+}
+/* -------------------- */
 
 
 .footer__info {

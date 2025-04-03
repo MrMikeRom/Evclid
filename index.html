@@ -513,21 +513,20 @@
                     </div>
                 </div>
 
+
                 <div class="footer__applications flex">
                     <h3 class="applications__title">Оставить заявку</h3>
 
-                    <form>
+                    <form class="applications__form flex">
                         <input class="application__name" type="text" placeholder="Фамилия, имя и отчество*">
-                    </form>
 
-                    <form>
                         <input class="application__email" type="email" placeholder="E-mail*">
+
+                        <textarea class="application__message" type="text" placeholder="Сообщение"></textarea>
                     </form>
 
-                    <form>
-                        <input class="application__message" type="text" placeholder="Сообщение">
-                    </form>
                 </div>
+
 
                 <div class="footer__info">
                     Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
@@ -539,6 +538,8 @@
 
         </div>
 
+
+        <!-- СКРИПТЫ ДЛЯ СЛАЙДЕРА -->
         <script type="module">
             import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
           
@@ -552,15 +553,15 @@
                   el: '.swiper-pagination',
                 },
                 
-                
+                autoplay: {
+                    delay: 20000,
+                },
                 
                 spaceBetween: 15,
             });
         </script>
+    </div>
 
-<!-- autoplay: {
-    delay: 20000,
-}, -->
 </body>
 
 </html>
