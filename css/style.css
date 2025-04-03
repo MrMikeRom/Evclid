@@ -8,10 +8,8 @@
 
 /* <------ ХЕДЕР / Заголовок сайта ------> */
 .header {
-    /* width: 100%; */
     align-items: center;
     justify-content: space-between;
-    /* height: 100%; */
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -31,14 +29,12 @@
     padding-left: 0;
 }
 
-.nav__item {
-    transition: .2s ease-in-out;
-}
-
 .nav__item-link {
     outline: none;
     border: 3px solid transparent;
     padding: 5px;
+    transition: color .2s ease-in-out,
+    border-bottom .2s ease-in-out;
 }
 
 
@@ -396,7 +392,7 @@
     font-size: 16px;
     text-align: center;
     min-height: 60px;
-    transition: .2s ease-in-out;
+    transition: background-color .2s ease-in-out;
 }
 
 
@@ -427,7 +423,8 @@
     font-size: 16px;
     text-align: center;
     min-height: 60px;
-    transition: .2s ease-in-out;
+    transition: background-color .2s ease-in-out,
+    color .2s ease-in-out;
 }
 
 
@@ -495,32 +492,34 @@
     color: var(--dark-gray);
     padding-bottom: 20px;
     padding-top: 40px;
-    transition: .2s ease-in-out;
     position: relative;
     justify-content: space-between;
+    transition: color .2s ease-in-out,
+    border-bottom .2s ease-in-out,
+    border-top .2s ease-in-out;
 }
 
 .faq__title:hover {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 133%;
     color: var(--btn-color);
     border-bottom: 1px solid var(--btn-color);
     border-top: 1px solid var(--btn-color);
 }
 
 .faq__input {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
     -webkit-appearance: none;
     appearance: none;
     position: absolute;
     width: 0;
     height: 0;
+    transition: color .2s ease-in-out,
+    border-bottom .2s ease-in-out,
+    border-top .2s ease-in-out;
 }
 
 .faq__input:focus-visible ~ .faq__title {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 133%;
     color: var(--btn-color);
     border-bottom: 1px solid var(--btn-color);
     border-top: 1px solid var(--btn-color);
