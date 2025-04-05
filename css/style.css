@@ -615,6 +615,8 @@
     height: 60px;
     background-color: var(--form-color);
     border: none;
+    color: var(--white);
+    padding-left: 27px;
 }
 
 .application__email {
@@ -625,6 +627,8 @@
     height: 60px;
     background-color: var(--form-color);
     border: none;
+    color: var(--white);
+    padding-left: 27px;
 }
 
 .application__message {
@@ -635,7 +639,76 @@
     height: 150px;
     background-color: var(--form-color);
     border: none;
+    color: var(--white);
+    padding-left: 27px;
+	padding-top: 20px;
 }
+
+.application__confirmation {
+    gap: 22px;
+    margin-top: 32px;
+    align-items: center;
+}
+
+.application__btn {
+    padding: 19px 38px;
+    width: 269px;
+    height: 58px;
+    background-color: var(--btn-color);
+    color: var(--white);
+    transition: background-color .2s ease-in-out;
+}
+
+/* СТИЛИЗАЦИЯ КНОПКИ РАЗДЕЛА "ЗАКАЗЫ" */
+.application__btn:focus-visible {
+    outline: none;
+    background-color: rgba(255, 153, 0, 0.7);
+}
+
+.application__btn:hover {
+    outline: none;
+    background-color: rgba(255, 153, 0, 0.7);
+}
+
+.application__btn:active {
+    border: none;
+    background-color: var(--btn-activ);
+}
+/* -------------------- */
+
+.application__processing {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: var(--stroke);
+    accent-color: transparent;
+    /* transform: scale(1.1) */
+}
+
+/* label input {
+    display: none;
+}
+
+label span {
+    height: 12px;
+    width: 12px;
+    border: 1px solid gray;
+    display: inline-block;
+    position: relative;
+    background-color: #FFF;
+    border-radius: 2px;
+    padding: 3px;
+}
+
+[type=checkbox]:checked + span::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    font-size: 23px;
+    color: green;
+} */
+
 /* -------------------- */
 
 
