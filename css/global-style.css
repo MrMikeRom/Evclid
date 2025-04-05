@@ -53,6 +53,7 @@ html {
 	--footer: #222;
 	--btn-color: #FF9900;
 	--btn-activ: #e1670e;
+	--btn-pale: rgba(255, 153, 0, 0.7);
 	--btn-grey: #666;
 	--btn-black: #000;
 	--white: #FFFFFF;

@@ -32,6 +32,7 @@
 .nav__item-link {
     outline: none;
     border: 3px solid transparent;
+    border-bottom: none;
     padding: 5px;
     transition: color .2s ease-in-out,
     border-bottom .2s ease-in-out;
@@ -49,8 +50,10 @@
 }
 
 .nav__item-link:active {
+    border: 3px solid transparent;
     border-bottom: 2px solid var(--btn-color);
     color: var(--btn-color);
+    
 }
 /* -------------------- */
 
@@ -123,12 +126,12 @@
 /* СТИЛИЗАЦИЯ КНОПКИ РАЗДЕЛА "ЗАКАЗЫ" */
 .order__btn:focus-visible {
     outline: none;
-    background-color: rgba(255, 153, 0, 0.7);
+    background-color: var(--btn-pale);
 }
 
 .order__btn:hover {
     outline: none;
-    background-color: rgba(255, 153, 0, 0.7);
+    background-color: var(--btn-pale);
 }
 
 .order__btn:active {
@@ -220,7 +223,6 @@
     text-align: center;
     transition: background .2s ease-in-out, 
     border .2s ease-in-out,
-    transform .2s ease-in-out;
 }
 
 
@@ -233,13 +235,11 @@
 .left-card__btn:hover {
     outline: none;
     background-color: var(--btn-color);
-    transform: translateY(2px);
 }
 
 .left-card__btn:active {
     border-color: var(--btn-activ);
     background-color: var(--btn-activ);
-    transform: translateY(4px);
 }
 /* -------------------- */
 
@@ -399,12 +399,12 @@
 /* СТИЛИЗАЦИЯ КНОПКИ РАЗДЕЛА "РАСПИСАНИЕ" */
 .consultation__btn--details:focus-visible {
     outline: none;
-    background-color: rgba(255, 153, 0, 0.7);
+    background-color: var(--btn-pale);
 }
 
 .consultation__btn--details:hover {
     outline: none;
-    background-color: rgba(255, 153, 0, 0.7);
+    background-color: var(--btn-pale);
 }
 
 .consultation__btn--details:active {
@@ -579,16 +579,80 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 200%;
-    width: 252px;
+    width: 265px;
 }
+
+.footer__nav_item-link {
+    padding: 3px;
+    border: 3px solid transparent;
+    transition: color .2s ease-in-out,
+    border .2s ease-in-out;
+}
+
+
+/* СТИЛИЗАЦИЯ СПИСКА НАВИГАЦИИ FOOTER */
+.footer__nav_item-link:focus-visible {
+    outline: none;
+    color: var(--btn-color);
+}
+
+.footer__nav_item-link:hover {
+    outline: none;
+    border: 3px solid var(--btn-color);
+}
+
+.footer__nav_item-link:active {
+    border: none;
+    color: var(--btn-activ);
+    border: 3px solid transparent;
+}
+/* -------------------- */
+
 
 .footer__networks {
     margin-top: 90px;
-    gap: 25px;
+    gap: 20px;
     margin-bottom: 50px;
 }
 
+.footer__networking {
+    border: 3px solid transparent;
+    outline: none;
+    padding: 3px;
+    transition: border .2s ease-in-out;
+}
+
+.footer__networking-link svg {
+    fill: #7C7C7C;
+    transition: fill .2s ease-in-out;
+}
+
+
+/* СТИЛИЗАЦИЯ ССЫЛОК НАВИГАЦИИ FOOTER */
+.footer__networking-link:focus-visible svg {
+    fill: var(--btn-color);
+}
+
+.footer__networking-link:focus-visible {
+    outline: none;
+}
+
+.footer__networking:hover {
+    border: 3px solid var(--btn-color);
+}
+
+.footer__networking-link:active svg {
+    fill: var(--btn-activ);
+}
+
+.footer__networking:active {
+    border: 3px solid transparent;
+}
 /* -------------------- */
+
+
+/* -------------------- */
+
 .footer__applications {
     flex-direction: column;
     padding-left: 165px;
@@ -644,6 +708,18 @@
 	padding-top: 20px;
 }
 
+
+/* СТИЛИЗАЦИЯ ПОЛЯ INPUT B FOOTER */
+.appl-style:focus-visible {
+    background-color: var(--btn-grey);
+}
+
+.appl-style:hover {
+    background-color: var(--btn-grey);
+}
+/* -------------------- */
+
+
 .application__confirmation {
     gap: 22px;
     margin-top: 32px;
@@ -659,18 +735,18 @@
     transition: background-color .2s ease-in-out;
 }
 
-/* СТИЛИЗАЦИЯ КНОПКИ РАЗДЕЛА "ЗАКАЗЫ" */
+/* СТИЛИЗАЦИЯ КНОПКИ РАЗДЕЛА FOOTER "ОТПРАВИТЬ ДАННЫЕ" */
 .application__btn:focus-visible {
     outline: none;
-    background-color: rgba(255, 153, 0, 0.7);
+    background-color: var(--btn-pale);
 }
 
 .application__btn:hover {
     outline: none;
-    background-color: rgba(255, 153, 0, 0.7);
+    background-color: var(--btn-pale);
 }
 
-.application__btn:active {
+.application__btn:active {  
     border: none;
     background-color: var(--btn-activ);
 }
