@@ -32,27 +32,26 @@
 .nav__item-link {
     outline: none;
     border: 3px solid transparent;
-    border-bottom: none;
     padding: 5px;
     transition: color .2s ease-in-out,
-    border-bottom .2s ease-in-out;
+    border .2s ease-in-out;
 }
 
 
 /* СТИЛИЗАЦИЯ КНОПКИ РАЗДЕЛА "НАВИГАЦИЯ" */
 .nav__item-link:focus-visible {
-    border-bottom: 3px solid var(--btn-color);
+    border-bottom-color: var(--btn-color);
     padding-bottom: 1px;
 }
 
 .nav__item-link:hover {
-    border: 3px solid var(--btn-color);
+    border-color: var(--btn-color);
 }
 
 .nav__item-link:active {
-    border: 3px solid transparent;
-    border-bottom: 2px solid var(--btn-color);
-    color: var(--btn-color);
+    border-color: transparent;
+    border-bottom-color: var(--btn-activ);
+    color: var(--btn-activ);
     
 }
 /* -------------------- */
@@ -344,6 +343,25 @@
     margin-left: 75px;
     gap: 71px;
 }
+
+
+/* ТАБЫ ЕСЛИ РАБОТАЕТ НЕ ТРОГАТЬ */
+.tab input[type="radio"] {
+    display: none;
+}
+
+.tab-content {
+    display: none;
+}
+
+#tab-btn-1:checked ~ #content-1,
+#tab-btn-2:checked ~ #content-2,
+#tab-btn-3:checked ~ #content-3,
+#tab-btn-4:checked ~ #content-4 {
+    display: block; 
+}
+/* -------------------- */
+
 
 /* schedule__button */
 .schedule__step {

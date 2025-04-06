@@ -173,38 +173,136 @@
         </div>
 
 
-
         <!-- РАЗДЕЛ "РАСПИСАНИЕ" / "schedule" -->
         <div class="schedule">
             <h2 class="schedule__title">Как мы&nbsp;работаем</h2>
 
-            <div class="schedule__steps flex">
-                <button class="schedule__step">1 шаг</button>
-                <button class="schedule__step">2 шаг</button>
-                <button class="schedule__step">3 шаг</button>
-                <button class="schedule__step">4 шаг</button>
-            </div>
+            <div class="tab schedule__steps">
+                
+                <input checked id="tab-btn-1" name="tab-btn" type="radio" value="">
+                <label class="schedule__step fff" for="tab-btn-1">1 шаг</label>
 
-            <div class="schedule__consultation flex">
-                <div class="consultation__left-block">
-                    <h3 class="consultation__title">Проводим консультацию</h3>
-                    <p class="consultation__text">Влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации
-                        приоритизации разума над эмоциями. В&nbsp;рамках спецификации современных стандартов, некоторые
-                        особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями.
-                        А&nbsp;также представители современных социальных резервов, инициированные исключительно
-                        синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей
-                        картины, реплицированные с&nbsp;зарубежных источников, современные исследования подвергнуты
-                        целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство,
-                        нанотехнологии освещают чрезвычайно интересные особенности картины в&nbsp;целом, однако
-                        конкретные выводы, разумеется, призваны к&nbsp;ответу.</p>
+                <input id="tab-btn-2" name="tab-btn" type="radio" value="">
+                <label class="schedule__step" for="tab-btn-2">2 шаг</label>
 
-                    <div class="consultation__btn flex">
-                        <button class="consultation__btn--details">Подробнее</button>
-                        <button class="consultation__btn--contract">Договор</button>
+                <input id="tab-btn-3" name="tab-btn" type="radio" value="">
+                <label class="schedule__step" for="tab-btn-3">3 шаг</label>
+
+                <input id="tab-btn-4" name="tab-btn" type="radio" value="">
+                <label class="schedule__step" for="tab-btn-4">4 шаг</label>
+                
+
+                <div class="schedule__consultation flex tab-content" id="content-1">
+                    <div class="consultation__left-block">
+                        <h3 class="consultation__title">Проводим консультацию</h3>
+
+                        <p class="consultation__text">Влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации
+                            приоритизации разума над эмоциями. В&nbsp;рамках спецификации современных стандартов,
+                            некоторые
+                            особенности внутренней политики будут объективно рассмотрены соответствующими
+                            инстанциями.
+                            А&nbsp;также представители современных социальных резервов, инициированные исключительно
+                            синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей
+                            картины, реплицированные с&nbsp;зарубежных источников, современные исследования
+                            подвергнуты
+                            целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное
+                            производство,
+                            нанотехнологии освещают чрезвычайно интересные особенности картины в&nbsp;целом, однако
+                            конкретные выводы, разумеется, призваны к&nbsp;ответу.</p>
+
+
+                        <div class="consultation__btn flex">
+                            <button class="consultation__btn--details">Подробнее</button>
+                            <button class="consultation__btn--contract">Договор</button>
+                        </div>
                     </div>
+
+                    <div class="consultation__img"></div>
                 </div>
 
-                <div class="consultation__img"></div>
+                <div class="schedule__consultation flex tab-content" id="content-2">
+                    <div class="consultation__left-block">
+                        <h3 class="consultation__title">Проводим консультацию</h3>
+
+                        <p class="consultation__text">Влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации
+                            приоритизации разума над эмоциями. В&nbsp;рамках спецификации современных стандартов,
+                            некоторые
+                            особенности внутренней политики будут объективно рассмотрены соответствующими
+                            инстанциями.
+                            А&nbsp;также представители современных социальных резервов, инициированные исключительно
+                            синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей
+                            картины, реплицированные с&nbsp;зарубежных источников, современные исследования
+                            подвергнуты
+                            целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное
+                            производство,
+                            нанотехнологии освещают чрезвычайно интересные особенности картины в&nbsp;целом, однако
+                            конкретные выводы, разумеется, призваны к&nbsp;ответу.</p>
+
+
+                        <div class="consultation__btn flex">
+                            <button class="consultation__btn--details">Подробнее</button>
+                            <button class="consultation__btn--contract">Договор</button>
+                        </div>
+                    </div>
+
+                    <div class="consultation__img"></div>
+                </div>
+
+                <div class="schedule__consultation flex tab-content" id="content-3">
+                    <div class="consultation__left-block">
+                        <h3 class="consultation__title">Проводим консультацию</h3>
+
+                        <p class="consultation__text">Влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации
+                            приоритизации разума над эмоциями. В&nbsp;рамках спецификации современных стандартов,
+                            некоторые
+                            особенности внутренней политики будут объективно рассмотрены соответствующими
+                            инстанциями.
+                            А&nbsp;также представители современных социальных резервов, инициированные исключительно
+                            синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей
+                            картины, реплицированные с&nbsp;зарубежных источников, современные исследования
+                            подвергнуты
+                            целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное
+                            производство,
+                            нанотехнологии освещают чрезвычайно интересные особенности картины в&nbsp;целом, однако
+                            конкретные выводы, разумеется, призваны к&nbsp;ответу.</p>
+
+
+                        <div class="consultation__btn flex">
+                            <button class="consultation__btn--details">Подробнее</button>
+                            <button class="consultation__btn--contract">Договор</button>
+                        </div>
+                    </div>
+
+                    <div class="consultation__img"></div>
+                </div>
+
+                <div class="schedule__consultation flex tab-content" id="content-4">
+                    <div class="consultation__left-block">
+                        <h3 class="consultation__title">Проводим консультацию</h3>
+
+                        <p class="consultation__text">Влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации
+                            приоритизации разума над эмоциями. В&nbsp;рамках спецификации современных стандартов,
+                            некоторые
+                            особенности внутренней политики будут объективно рассмотрены соответствующими
+                            инстанциями.
+                            А&nbsp;также представители современных социальных резервов, инициированные исключительно
+                            синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей
+                            картины, реплицированные с&nbsp;зарубежных источников, современные исследования
+                            подвергнуты
+                            целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное
+                            производство,
+                            нанотехнологии освещают чрезвычайно интересные особенности картины в&nbsp;целом, однако
+                            конкретные выводы, разумеется, призваны к&nbsp;ответу.</p>
+
+
+                        <div class="consultation__btn flex">
+                            <button class="consultation__btn--details">Подробнее</button>
+                            <button class="consultation__btn--contract">Договор</button>
+                        </div>
+                    </div>
+
+                    <div class="consultation__img"></div>
+                </div>
             </div>
         </div>
 
@@ -517,7 +615,8 @@
 
                         <input class="application__email appl-style" type="email" placeholder="E-mail*">
 
-                        <textarea class="application__message appl-style" type="text" placeholder="Сообщение"></textarea>
+                        <textarea class="application__message appl-style" type="text"
+                            placeholder="Сообщение"></textarea>
                     </form>
 
                     <div class="application__confirmation flex">
