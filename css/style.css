@@ -33,6 +33,7 @@
     outline: none;
     border: 3px solid transparent;
     padding: 5px;
+    padding-bottom: 1px;
     transition: color .2s ease-in-out,
     border .2s ease-in-out;
 }
@@ -40,12 +41,11 @@
 
 /* СТИЛИЗАЦИЯ КНОПКИ РАЗДЕЛА "НАВИГАЦИЯ" */
 .nav__item-link:focus-visible {
-    border-bottom-color: var(--btn-color);
-    padding-bottom: 1px;
+    border-color: var(--btn-color);
 }
 
 .nav__item-link:hover {
-    border-color: var(--btn-color);
+    border-bottom-color: var(--btn-color);
 }
 
 .nav__item-link:active {
@@ -54,7 +54,7 @@
     color: var(--btn-activ);
     
 }
-/* -------------------- */
+/* <---------- X ----------> */
 
 
 .header__search {
@@ -120,6 +120,7 @@
     margin-bottom: 100px;
     transition: background-color .2s ease-in-out;
 }
+/* <---------- X ----------> */
 
 
 /* СТИЛИЗАЦИЯ КНОПКИ РАЗДЕЛА "ЗАКАЗЫ" */
@@ -137,7 +138,7 @@
     border: none;
     background-color: var(--btn-activ);
 }
-/* -------------------- */
+/* <---------- X ----------> */
 
 
 .swiper-pagination {
@@ -223,6 +224,7 @@
     transition: background .2s ease-in-out, 
     border .2s ease-in-out,
 }
+/* <---------- X ----------> */
 
 
 /* СТИЛИЗАЦИЯ КНОПКИ РАЗДЕЛА "О НАС" */
@@ -240,7 +242,7 @@
     border-color: var(--btn-activ);
     background-color: var(--btn-activ);
 }
-/* -------------------- */
+/* <---------- X ----------> */
 
 
 .about-us__right-cards {
@@ -341,11 +343,37 @@
 .schedule__steps {
     margin-top: 50px;
     margin-left: 75px;
-    gap: 71px;
+}
+
+.schedule__step {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--dark-gray);
+    margin-right: 85px;
+    border: 3px solid transparent;
+    padding: 3px;
+    transition: border .3s ease-in-out,
+    color .3s ease-in-out;
 }
 
 
-/* ТАБЫ ЕСЛИ РАБОТАЕТ НЕ ТРОГАТЬ */
+/* СТИЛИЗАЦИЯ ТАБОВ РАЗДЕЛ "РАСПИСАНИЕ" */
+.schedule__step:focus-visible {
+    outline: none;
+    border-color: var(--btn-color);
+}
+
+.schedule__step:hover {
+    color: var(--btn-color);
+}
+
+.schedule__step:active {
+    color: var(--btn-activ);
+}
+/* <---------- X ----------> */
+
+
+/* ТАБЫ ЕСЛИ ЕЩЕ ПРИГОЛЯТСЯ! */
 .tab input[type="radio"] {
     display: none;
 }
@@ -358,23 +386,15 @@
 #tab-btn-2:checked ~ #content-2,
 #tab-btn-3:checked ~ #content-3,
 #tab-btn-4:checked ~ #content-4 {
-    display: block; 
+    display: flex;
+    gap: 142px;
 }
-/* -------------------- */
+/* <---------- X ----------> */
 
-
-/* schedule__button */
-.schedule__step {
-    font-weight: 400;
-    font-size: 18px;
-    color: var(--dark-gray);
-}
 
 .schedule__consultation {
     width: 1770px;
     margin-top: 45px;
-    margin-left: 75px;
-    gap: 142px;
 }
 
 .consultation__left-block {
@@ -410,11 +430,11 @@
     font-size: 16px;
     text-align: center;
     min-height: 60px;
-    transition: background-color .2s ease-in-out;
+    transition: background .2s ease-in-out;
 }
 
 
-/* СТИЛИЗАЦИЯ КНОПКИ РАЗДЕЛА "РАСПИСАНИЕ" */
+/* СТИЛИЗАЦИЯ КНОПКИ "ПОДРОБНЕЕ" РАЗДЕЛА "РАСПИСАНИЕ" */
 .consultation__btn--details:focus-visible {
     outline: none;
     background-color: var(--btn-pale);
@@ -429,7 +449,7 @@
     border: none;
     background-color: var(--btn-activ);
 }
-/* -------------------- */
+/* <---------- X ----------> */
 
 
 .consultation__btn--contract {
@@ -441,16 +461,16 @@
     font-size: 16px;
     text-align: center;
     min-height: 60px;
-    transition: background-color .2s ease-in-out,
+    transition: background .2s ease-in-out,
     color .2s ease-in-out;
 }
 
 
-/* СТИЛИЗАЦИЯ КНОПКИ РАЗДЕЛА "РАСПИСАНИЕ" */
+/* СТИЛИЗАЦИЯ КНОПКИ "ДОГОВОР" РАЗДЕЛА "РАСПИСАНИЕ" */
 .consultation__btn--contract:focus-visible {
+    border: none;
     background-color: var(--btn-grey);
     color: var(--white);
-    border: none;
     outline: inherit;
 }
 
@@ -464,11 +484,10 @@
     border: none;
     background-color: var(--btn-black);
 }
-/* -------------------- */
+/* <---------- X ----------> */
 
 
 .consultation__img {
-    background-image: url(/assets/img/consultation.svg);
     width: 870px;
     height: 460px;
     background-size: cover;
@@ -513,8 +532,7 @@
     position: relative;
     justify-content: space-between;
     transition: color .2s ease-in-out,
-    border-bottom .2s ease-in-out,
-    border-top .2s ease-in-out;
+    border .2s ease-in-out;
 }
 
 .faq__title:hover {
@@ -533,8 +551,8 @@
     width: 0;
     height: 0;
     transition: color .2s ease-in-out,
-    border-bottom .2s ease-in-out,
-    border-top .2s ease-in-out;
+    border .2s ease-in-out,
+    transform .2s ease-in-out;
 }
 
 .faq__input:focus-visible ~ .faq__title {
@@ -611,20 +629,19 @@
 /* СТИЛИЗАЦИЯ СПИСКА НАВИГАЦИИ FOOTER */
 .footer__nav_item-link:focus-visible {
     outline: none;
-    color: var(--btn-color);
+    border: 3px solid var(--btn-color);
 }
 
 .footer__nav_item-link:hover {
     outline: none;
-    border: 3px solid var(--btn-color);
+    color: var(--btn-color);
 }
 
 .footer__nav_item-link:active {
-    border: none;
     color: var(--btn-activ);
     border: 3px solid transparent;
 }
-/* -------------------- */
+/* <---------- X ----------> */
 
 
 .footer__networks {
@@ -636,27 +653,29 @@
 .footer__networking {
     border: 3px solid transparent;
     outline: none;
-    padding: 3px;
     transition: border .2s ease-in-out;
 }
 
 .footer__networking-link svg {
+    padding: 3px;
     fill: #7C7C7C;
-    transition: fill .2s ease-in-out;
+    border: 3px solid transparent;
+    transition: fill .2s ease-in-out,
+    border .2s ease-in-out;
 }
 
 
 /* СТИЛИЗАЦИЯ ССЫЛОК НАВИГАЦИИ FOOTER */
 .footer__networking-link:focus-visible svg {
-    fill: var(--btn-color);
+    border-color: var(--btn-color);
 }
 
 .footer__networking-link:focus-visible {
     outline: none;
 }
 
-.footer__networking:hover {
-    border: 3px solid var(--btn-color);
+.footer__networking:hover svg {
+    fill: var(--btn-color);
 }
 
 .footer__networking-link:active svg {
@@ -666,10 +685,10 @@
 .footer__networking:active {
     border: 3px solid transparent;
 }
-/* -------------------- */
+/* <---------- X ----------> */
 
 
-/* -------------------- */
+/* <---------- X ----------> */
 
 .footer__applications {
     flex-direction: column;
@@ -726,16 +745,21 @@
 	padding-top: 20px;
 }
 
+.appl-style {
+    transition: background .3s ease-in-out;
+}
+
 
 /* СТИЛИЗАЦИЯ ПОЛЯ INPUT B FOOTER */
 .appl-style:focus-visible {
     background-color: var(--btn-grey);
+    outline: none;
 }
 
 .appl-style:hover {
     background-color: var(--btn-grey);
 }
-/* -------------------- */
+/* <---------- X ----------> */
 
 
 .application__confirmation {
@@ -750,8 +774,9 @@
     height: 58px;
     background-color: var(--btn-color);
     color: var(--white);
-    transition: background-color .2s ease-in-out;
+    transition: background .3s ease-in-out;
 }
+
 
 /* СТИЛИЗАЦИЯ КНОПКИ РАЗДЕЛА FOOTER "ОТПРАВИТЬ ДАННЫЕ" */
 .application__btn:focus-visible {
@@ -768,7 +793,8 @@
     border: none;
     background-color: var(--btn-activ);
 }
-/* -------------------- */
+/* <---------- X ----------> */
+
 
 .application__processing {
     font-weight: 400;
@@ -803,7 +829,7 @@ label span {
     color: green;
 } */
 
-/* -------------------- */
+/* <---------- X ----------> */
 
 
 .footer__info {
