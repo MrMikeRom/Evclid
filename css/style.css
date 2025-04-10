@@ -1,5 +1,6 @@
 .container {
-    max-width: 1920px;
+    max-width: 1950px;
+    padding: 0 15px;
     margin: 0 auto;
     width: 100%;
     font-family: var(--font);
@@ -19,8 +20,12 @@
     height: 72px;
 }
 
-.nav__list {
+.header__nav {
     align-items: center;
+    gap: 72px;
+}
+
+.nav__list {
     list-style-type: none;
     font-weight: 600;
     font-size: 18px;
@@ -176,6 +181,7 @@
     margin-top: 100px;
     height: 100%;
 }
+
 .about-us__title {
     margin: 0;
     font-weight: 400;
@@ -194,7 +200,6 @@
     margin-left: 75px;
     margin-top: 20px;
     line-height: 2.05;
-
 }
 
 .about-us__cards {
@@ -205,9 +210,12 @@
 
 .about-us__left-card {
     position: relative;
-    width: 868px;
+    width: calc(50% - 16px);
     height: 622px;
     background-image: url(/assets/img/Rectangle.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .left-card__black-frame {
@@ -216,8 +224,10 @@
     bottom: 0;
     background-image: url(/assets/img/Rectangle2.svg);
     fill: rgba(0, 0, 0, 0.5);
-    width: 868px;
     height: 196px;
+    right: 0;
+    left: 0;
+    flex-wrap: wrap;
 }
 
 .left-card__text{
@@ -242,7 +252,7 @@
     font-size: 16px;
     text-align: center;
     transition: background .2s ease-in-out, 
-    border .2s ease-in-out,
+    border .2s ease-in-out;
 }
 /* <---------- X ----------> */
 
@@ -268,10 +278,11 @@
 .about-us__right-cards {
     gap: 32px;
     flex-flow: column;
+    width: calc(50% - 16px);
 }
 
 .about-us__two-card {
-    width: 870px;
+    width: 100%;
     height: 295px;
     border: 1px solid var(--stroke);
 }
@@ -310,7 +321,7 @@
 }
 
 .about-us__three-card {
-    width: 870px;
+    width: 100%;
     height: 295px;
     border: 1px solid var(--stroke);
 }
