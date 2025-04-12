@@ -1,6 +1,5 @@
 .container {
-    max-width: 1950px;
-    padding: 0 15px;
+    max-width: 1920px;
     margin: 0 auto;
     width: 100%;
     font-family: var(--font);
@@ -74,33 +73,32 @@
     justify-content: center;
     max-width: 1770px;
     width: 100%;
+    margin-bottom: 100px;
 }
 
 .order__card {
     justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    /* padding-left: 80px; */
+}
+
+.order__card--first {
     background: url(/assets/img/balconies.png);
-    height: 100%;
-    flex-direction: column;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
-.order__card2 {
-    justify-content: center;
+.order__card--second {
     background: url(/assets/img/balconies2.png);
-    height: 100%;
-    flex-direction: column;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
-.order__card3 {
-    justify-content: center;
+.order__card--third {
     background: url(/assets/img/balconies3.png);
-    height: 100%;
-    flex-direction: column;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -111,38 +109,32 @@
     font-size: 70px;
     line-height: 86px;
     color: var(--white);
-    width: 840px;
+    max-width: 840px;
     height: 100%;
-    margin-top: 100px;
-    margin-left: 80px;
-    margin-bottom: 0;
+    margin: 100px 0 0 80px;
 }
 
 .order__text {
-    width: 800px;
+    max-width: 800px;
     height: 100%;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
     color: var(--white);
-    margin-left: 80px;
-    margin-bottom: 0;
-    margin-top: 22px;
+    margin: 22px 0 0 80px;
 }
 
 .order__btn {
     padding: 18px 37px;
-	width: 200px;
-	height: 43px;
+	min-width: 210px;
+	min-height: 43px;
     color: var(--white);
 	background-color: var(--btn-color);
 	font-weight: 700;
 	font-size: 22px;
 	text-align: center;
 	border: 0;
-    margin-top: 90px;
-    margin-left: 80px;
-    margin-bottom: 100px;
+    margin: 90px 0 100px 80px;
     transition: background-color .2s ease-in-out;
 }
 /* <---------- X ----------> */
@@ -178,12 +170,11 @@
 
 /* <------ РАЗДЕЛ "О НАС" / "ABOUT US" ------> */
 .about-us {
-    margin-top: 100px;
     height: 100%;
+    margin-bottom: 100px;
 }
 
 .about-us__title {
-    margin: 0;
     font-weight: 400;
     font-size: 48px;
     color: var(--dark-gray);
@@ -199,16 +190,16 @@
     width: 1235px;
     margin-left: 75px;
     margin-top: 20px;
+    margin-bottom: 50px;
     line-height: 2.05;
 }
 
 .about-us__cards {
-    margin-top: 50px;
     margin-left: 75px;
     gap: 32px;
 }
 
-.about-us__left-card {
+.about-us__left {
     position: relative;
     width: calc(50% - 16px);
     height: 622px;
@@ -275,13 +266,13 @@
 /* <---------- X ----------> */
 
 
-.about-us__right-cards {
+.about-us__right {
     gap: 32px;
     flex-flow: column;
     width: calc(50% - 16px);
 }
 
-.about-us__two-card {
+.about-us__card {
     width: 100%;
     height: 295px;
     border: 1px solid var(--stroke);
@@ -320,12 +311,6 @@
     line-height: 2;
 }
 
-.about-us__three-card {
-    width: 100%;
-    height: 295px;
-    border: 1px solid var(--stroke);
-}
-
 .three-card__img {
     background-image: url(/assets/img/gear.svg);
     background-size: cover;
@@ -359,6 +344,7 @@
 /* <------ РАЗДЕЛ "РАСПИСАНИЕ" / "schedule" ------> */
 .schedule {
     width: 1772px;
+    margin-bottom: 100px;
 }
 
 .schedule__title {
@@ -368,7 +354,6 @@
     width: 430px;
     margin: 0;
     margin-left: 75px;
-    margin-top: 100px;
 }
 
 .schedule__steps {
@@ -531,8 +516,8 @@
 
 /* <------ РАЗДЕЛ "ВОПРОСЫ" / "questions" (аккордеон) ------> */
 .questions {
-    margin-top: 100px;
     margin-left: 75px;
+    margin-bottom: 100px;
     max-width: 1770px;
 }
 
@@ -619,8 +604,7 @@
 
 /* <------ РАЗДЕЛ "FOOTER" ------> */
 .footer {
-    margin-top: 100px;
-    background-color: var(--footer);
+    background-color: var(--footer-background);
     min-height: 594px;
 }
 
