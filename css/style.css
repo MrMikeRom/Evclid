@@ -19,6 +19,10 @@
     height: 72px;
 }
 
+.header__logo-link:focus-visible {
+    outline: none;
+}
+
 .header__nav {
     align-items: center;
     gap: 72px;
@@ -68,6 +72,10 @@
 
 .header__search--btn {
     cursor: pointer;
+}
+
+.header__search--btn:focus-visible {
+    outline: none;
 }
 /* <---------- X ----------> */
 
@@ -619,6 +627,10 @@
 .footer__logo {
     margin-bottom: 15px;
     cursor: pointer;
+}
+
+.footer__logo-link:focus-visible {
+    outline: none;
 }
 
 .footer__nav_list {
