@@ -37,35 +37,35 @@
 
                     <!-- 1 элемент навигации -->
                     <li class="nav__item">
-                        <a href="#" class="nav__item-link">
+                        <a href="#part1" class="nav__item-link">
                             О нас
                         </a>
                     </li>
 
                     <!-- 2 элемент навигации -->
                     <li class="nav__item">
-                        <a href="#" class="nav__item-link">
+                        <a href="#part2" class="nav__item-link">
                             Проекты
                         </a>
                     </li>
 
                     <!-- 3 элемент навигации -->
                     <li class="nav__item">
-                        <a href="#" class="nav__item-link">
+                        <a href="#part3" class="nav__item-link">
                             Этапы
                         </a>
                     </li>
 
                     <!-- 4 элемент навигации -->
                     <li class="nav__item">
-                        <a href="#" class="nav__item-link">
+                        <a href="#part4" class="nav__item-link">
                             Отзывы
                         </a>
                     </li>
 
                     <!-- 5 элемент навигации -->
                     <li class="nav__item">
-                        <a href="#" class="nav__item-link">
+                        <a href="#part5" class="nav__item-link">
                             Контакты
                         </a>
                     </li>
@@ -73,13 +73,16 @@
 
                 <!-- ПОИСК -->
                 <div class="header__search">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="7.56126" height="1.89031"
-                            transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#333333" />
-                        <path
-                            d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
-                            stroke="#333333" stroke-width="2" />
-                    </svg>
+                    <button class="header__search--btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="7.56126" height="1.89031"
+                                transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)"
+                                fill="#333333" />
+                            <path
+                                d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
+                                stroke="#333333" stroke-width="2" />
+                        </svg>
+                    </button>
                 </div>
 
             </nav>
@@ -90,7 +93,7 @@
         <!-- РАЗДЕЛ ЗАКАЗЫ -->
 
         <!-- Slider main container -->
-        <div class="order flex swiper">
+        <div class="order flex swiper" id="part2">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -112,7 +115,6 @@
                         и&nbsp;по&nbsp;сей день остаются уделом проектантов</p>
                     <button class="order__btn btn">Заказать расчёт</button>
                 </div>
-                ...
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
@@ -121,7 +123,7 @@
 
 
         <!-- РАЗДЕЛ "О НАС" / "ABOUT US" -->
-        <div class="about-us">
+        <div class="about-us" id="part1">
             <h2 class="about-us__title">О нас</h2>
 
             <p class="about-us__text">
@@ -173,7 +175,7 @@
 
 
         <!-- РАЗДЕЛ "РАСПИСАНИЕ" / "schedule" -->
-        <div class="schedule">
+        <div class="schedule" id="part3">
             <h2 class="schedule__title">Как мы&nbsp;работаем</h2>
 
             <div class="tab schedule__steps">
@@ -295,13 +297,14 @@
 
 
         <!-- РАЗДЕЛ "ВОПРОСЫ" / "questions" (аккордеон) -->
-        <section class="questions">
+        <section class="questions" id="part4">
             <h2 class="questions__title">Часто задаваемые вопросы</h2>
 
             <div class="faq">
                 <div class="faq__item">
                     <input type="checkbox" class="faq__input" id="faq__1">
-                    <label class="faq__title flex" for="faq__1">Из&nbsp;чего формируется конечная стоимость проекта?
+                    <label class="faq__title faq__title--one flex" for="faq__1">Из&nbsp;чего формируется конечная
+                        стоимость проекта?
                         <svg class="faq__title--img" width="50" height="50" viewBox="0 0 50 50" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC" />
@@ -473,7 +476,7 @@
 
                     <!-- ЛОГОТИП -->
                     <div class="footer__logo">
-                        <a href="#" target="_self" class="footer__logo-link">
+                        <a href="/" target="_self" class="footer__logo-link">
                             <img src="assets/img/footer-logo.svg" alt="Evclid logo footer">
                         </a>
                     </div>
@@ -484,21 +487,21 @@
 
                         <!-- 1 элемент навигации -->
                         <li class="footer__nav_item">
-                            <a href="#" class="footer__nav_item-link">
+                            <a href="#part1" class="footer__nav_item-link">
                                 О нас
                             </a>
                         </li>
 
                         <!-- 2 элемент навигации -->
                         <li class="footer__nav_item">
-                            <a href="#" class="footer__nav_item-link">
+                            <a href="#part2" class="footer__nav_item-link">
                                 Проекты
                             </a>
                         </li>
 
                         <!-- 3 элемент навигации -->
                         <li class="footer__nav_item">
-                            <a href="#" class="footer__nav_item-link">
+                            <a href="#part4" class="footer__nav_item-link">
                                 Отзывы
                             </a>
                         </li>
@@ -593,7 +596,7 @@
                 </div>
 
 
-                <div class="footer__applications flex">
+                <div class="footer__applications flex" id="part5">
                     <h3 class="applications__title">Оставить заявку</h3>
 
                     <form class="applications__form flex">

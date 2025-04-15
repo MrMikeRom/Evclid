@@ -63,6 +63,11 @@
 
 .header__search {
     margin-right: 59px;
+    cursor: pointer;
+}
+
+.header__search--btn {
+    cursor: pointer;
 }
 /* <---------- X ----------> */
 
@@ -125,6 +130,7 @@
 }
 
 .order__btn {
+    cursor: pointer;
     padding: 18px 37px;
 	min-width: 210px;
 	min-height: 43px;
@@ -231,6 +237,7 @@
 
 .left__btn {
     /* position: absolute; */
+    cursor: pointer;
     margin: 0 auto;
     margin-top: 65px;
     margin-right: 75px;
@@ -276,7 +283,7 @@
 
 .right__card {
     width: 100%;
-    height: 295px;
+    min-height: 295px;
     border: 1px solid var(--stroke);
 }
 
@@ -341,6 +348,7 @@
 }
 
 .schedule__step {
+    cursor: pointer;
     font-weight: 400;
     font-size: 18px;
     color: var(--dark-gray);
@@ -418,6 +426,7 @@
 }
 
 .consultation__btn--details {
+    cursor: pointer;
     padding: 20px 38px;
     width: 175px;
     background-color: var(--btn-color);
@@ -449,9 +458,10 @@
 
 
 .consultation__btn--contract {
+    cursor: pointer;
     border: 1px solid var(--dark-gray);
     padding: 20px 38px;
-    width: 147px;
+    min-width: 147px;
     color: var(--dark-gray);
     font-weight: 400;
     font-size: 16px;
@@ -505,14 +515,7 @@
     font-weight: 400;
     font-size: 48px;
     color: var(--dark-gray);
-    /* border-bottom: 1px solid var(--border);
-    padding-bottom: 40px; */
     margin-bottom: 45px;
-}
-
-.faq__item {
-    border-bottom: 1px solid var(--border);
-    border-top: 1px solid var(--border);
 }
 
 .faq__title {
@@ -526,13 +529,24 @@
     padding-top: 40px;
     position: relative;
     justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+    border-top: 1px solid transparent;
     transition: color .2s ease-in-out,
     border .2s ease-in-out;
+}
+
+.faq__title--one {
+    border-top: 1px solid var(--border);
 }
 
 .faq__title:hover {
     color: var(--btn-color);
     border-bottom: 1px solid var(--btn-color);
+    border-top: 1px solid var(--btn-color);
+}
+
+.faq__title--one:hover {
+    color: var(--btn-color);
     border-top: 1px solid var(--btn-color);
 }
 
@@ -546,8 +560,11 @@
     width: 0;
     height: 0;
     transition: color .2s ease-in-out,
-    border .2s ease-in-out,
-    transform .2s ease-in-out;
+    border .2s ease-in-out;
+}
+
+.faq__title--img {
+    transition: transform .3s ease-in-out;
 }
 
 .faq__input:focus-visible ~ .faq__title {
@@ -601,6 +618,7 @@
 
 .footer__logo {
     margin-bottom: 15px;
+    cursor: pointer;
 }
 
 .footer__nav_list {
@@ -766,6 +784,7 @@
 }
 
 .application__btn {
+    cursor: pointer;
     padding: 19px 38px;
     width: 269px;
     height: 58px;
