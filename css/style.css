@@ -74,11 +74,39 @@
 
 .header__search-btn {
     cursor: pointer;
+    outline: none;
+    border: 3px solid transparent;
+    padding: 5px;
+    transition: border .2s ease-in-out,
+    fill .2s ease-in-out,
+    stroke .2s ease-in-out;
 }
 
+
+/* СТИЛИЗАЦИЯ КНОПКИ ПОИСК */
 .header__search-btn:focus-visible {
     outline: none;
+    border-color: var(--btn-color);
 }
+
+.header__search-btn:hover svg path {
+    stroke: var(--btn-color);
+}
+
+.header__search-btn:hover svg rect {
+    fill: var(--btn-color);
+}
+
+.header__search-btn:active svg path {
+    stroke: var(--btn-color);
+}
+
+.header__search-btn:active svg rect {
+    fill: var(--btn-color);
+}
+/* <---------- X ----------> */
+
+
 /* <---------- X ----------> */
 
 
@@ -188,14 +216,15 @@
 .about-us {
     height: 100%;
     margin-bottom: 100px;
+    padding: 0 75px;
 }
 
 .about-us__title {
     font-weight: 400;
     font-size: 48px;
     color: var(--dark-gray);
-    margin-left: 77px;
     width: 141px;
+    margin-bottom: 20px;
 }
 
 .about-us__text{
@@ -204,14 +233,11 @@
     font-size: 16px;
     color: var(--dark-gray);
     width: 1235px;
-    margin-left: 75px;
-    margin-top: 20px;
     margin-bottom: 50px;
     line-height: 2.05;
 }
 
 .about-us__cards {
-    margin-left: 75px;
     gap: 32px;
 }
 
@@ -311,22 +337,21 @@
 
 .right__info {
     position: relative;
-    margin-top: 65px;
-    margin-left: 300px;
+    padding: 65px 0 65px 300px;
 }
 
 .right__title {
     max-width: 452px;
+    margin: 0;
+    margin-bottom: 8px;
     font-weight: 700;
     font-size: 24px;
     color: var(--dark-gray);
-    margin: 0;
 }
 
 .right__text {
     font-weight: 400;
     margin: 0;
-    margin-top: 8px;
     font-size: 16px;
     color: var(--dark-gray);
     max-width: 450px;
@@ -345,14 +370,14 @@
 .schedule {
     width: 1772px;
     margin-bottom: 100px;
-    margin-left: 75px;
+    padding: 0 75px;
 }
 
 .schedule__title {
     font-weight: 400;
     font-size: 48px;
     color: var(--dark-gray);
-    width: 430px;
+    min-width: 430px;
     margin: 0;
     margin-bottom: 50px;
 }
@@ -516,9 +541,9 @@
 
 /* <------ РАЗДЕЛ "ВОПРОСЫ" / "questions" (аккордеон) ------> */
 .questions {
-    margin-left: 75px;
+    padding: 0 75px;
     margin-bottom: 100px;
-    max-width: 1770px;
+    width: 100%;
 }
 
 .questions__title {
@@ -615,8 +640,7 @@
 }
 
 .footer__container {
-    padding-top: 50px;
-    padding-left: 74px;
+    padding: 50px 74px;
     justify-content: space-between;
     /* gap: 350px; */
 }
@@ -866,7 +890,6 @@ label span {
     padding-left: 48px;
     width: 410px;
     padding-top: 90px;
-    margin-right: 75px;
     font-weight: 400;
     font-size: 16px;
     line-height: 200%;
