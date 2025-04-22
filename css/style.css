@@ -72,11 +72,11 @@
     cursor: pointer;
 }
 
-.header__search--btn {
+.header__search-btn {
     cursor: pointer;
 }
 
-.header__search--btn:focus-visible {
+.header__search-btn:focus-visible {
     outline: none;
 }
 /* <---------- X ----------> */
