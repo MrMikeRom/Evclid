@@ -1,16 +1,18 @@
 .container {
     max-width: 1920px;
-    height: 100%;
 }
 
 
 /* <------ ХЕДЕР / Заголовок сайта ------> */
 .header {
+    position: fixed;
     width: 100%;
+    top: 0;
+    z-index: 1000;
     align-items: center;
     justify-content: space-between;
-    height: 100%;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.55);
+    background-color: var(--white);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
 }
 
 .header__logo {
@@ -19,20 +21,92 @@
     height: 72px;
 }
 
-.nav__list {
+.header__logo-link:focus-visible {
+    outline: none;
+}
+
+.header__nav {
     align-items: center;
+    gap: 72px;
+}
+
+.nav__list {
     list-style-type: none;
     font-weight: 600;
     font-size: 18px;
     color: var(--dark-gray);
-    gap: 85px;
+    gap: 72px;
     padding-left: 0;
-    font-family: 'Montserrat', sans-serif;
 }
+
+.nav__item-link {
+    outline: none;
+    border: 3px solid transparent;
+    padding: 5px;
+    padding-bottom: 1px;
+    transition: color .2s ease-in-out,
+    border .2s ease-in-out;
+}
+
+
+/* СТИЛИЗАЦИЯ КНОПКИ РАЗДЕЛА "НАВИГАЦИЯ" */
+.nav__item-link:focus-visible {
+    border-color: var(--btn-color);
+}
+
+.nav__item-link:hover {
+    border-bottom-color: var(--btn-color);
+}
+
+.nav__item-link:active {
+    border-color: transparent;
+    border-bottom-color: var(--btn-activ);
+    color: var(--btn-activ);
+    
+}
+/* <---------- X ----------> */
+
 
 .header__search {
     margin-right: 59px;
+    cursor: pointer;
 }
+
+.header__search-btn {
+    cursor: pointer;
+    outline: none;
+    border: 3px solid transparent;
+    padding: 5px;
+    transition: border .2s ease-in-out,
+    fill .2s ease-in-out,
+    stroke .2s ease-in-out;
+}
+
+
+/* СТИЛИЗАЦИЯ КНОПКИ ПОИСК */
+.header__search-btn:focus-visible {
+    outline: none;
+    border-color: var(--btn-color);
+}
+
+.header__search-btn:hover svg path {
+    stroke: var(--btn-color);
+}
+
+.header__search-btn:hover svg rect {
+    fill: var(--btn-color);
+}
+
+.header__search-btn:active svg path {
+    stroke: var(--btn-color);
+}
+
+.header__search-btn:active svg rect {
+    fill: var(--btn-color);
+}
+/* <---------- X ----------> */
+
+
 /* <---------- X ----------> */
 
 
@@ -40,16 +114,34 @@
 /* <------ РАЗДЕЛ ЗАКАЗЫ ------> */
 .order {
     justify-content: center;
+    max-width: 1770px;
+    width: 100%;
+    margin-bottom: 100px;
 }
 
 .order__card {
-    width: 1770px;
     justify-content: center;
-    background: url(/assets/img/balconies.png);
     height: 100%;
     flex-direction: column;
-    margin-left: 75px;
-    margin-right: 75px;
+    /* padding-left: 80px; */
+}
+
+.order__card--first {
+    background: url(/assets/img/balconies.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.order__card--second {
+    background: url(/assets/img/balconies2.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.order__card--third {
+    background: url(/assets/img/balconies3.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -60,48 +152,61 @@
     font-size: 70px;
     line-height: 86px;
     color: var(--white);
-    width: 840px;
+    max-width: 840px;
     height: 100%;
-    margin-top: 100px;
-    margin-left: 80px;
-    margin-bottom: 0;
-    font-family: 'Montserrat', sans-serif;
+    padding: 200px 0 0 80px;
 }
 
 .order__text {
-    width: 800px;
+    max-width: 800px;
     height: 100%;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
     color: var(--white);
-    margin-left: 80px;
-    margin-bottom: 0;
-    margin-top: 22px;
-    font-family: 'Montserrat', sans-serif;
+    margin: 22px 0 0 80px;
 }
 
 .order__btn {
+    cursor: pointer;
     padding: 18px 37px;
-	width: 280px;
-	height: 78px;
+	min-width: 210px;
+	min-height: 43px;
     color: var(--white);
-	background-color: #FF9900;
+	background-color: var(--btn-color);
 	font-weight: 700;
-	font-size: 23.3px;
+	font-size: 22px;
 	text-align: center;
 	border: 0;
-	font-family: 'Montserrat', sans-serif;
-    margin-top: 90px;
-    margin-left: 80px;
-    margin-bottom: 55px;
+    margin: 90px 0 100px 80px;
+    transition: background-color .2s ease-in-out;
+}
+/* <---------- X ----------> */
+
+
+/* СТИЛИЗАЦИЯ КНОПКИ РАЗДЕЛА "ЗАКАЗЫ" */
+.order__btn:focus-visible {
+    outline: none;
+    background-color: var(--btn-pale);
 }
 
-.order__bullets {
+.order__btn:hover {
+    outline: none;
+    background-color: var(--btn-pale);
+}
+
+.order__btn:active {
+    border: none;
+    background-color: var(--btn-activ);
+}
+/* <---------- X ----------> */
+
+
+.swiper-pagination {
     align-items: center;
-    margin-bottom: 30px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    margin-left: 6px;
 }
 /* <---------- X ----------> */
 
@@ -109,17 +214,17 @@
 
 /* <------ РАЗДЕЛ "О НАС" / "ABOUT US" ------> */
 .about-us {
-    margin-top: 100px;
     height: 100%;
+    margin-bottom: 100px;
+    padding: 0 75px;
 }
+
 .about-us__title {
-    margin: 0;
     font-weight: 400;
     font-size: 48px;
     color: var(--dark-gray);
-    margin-left: 77px;
     width: 141px;
-    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
 }
 
 .about-us__text{
@@ -128,140 +233,134 @@
     font-size: 16px;
     color: var(--dark-gray);
     width: 1235px;
-    margin-left: 75px;
-    margin-top: 20px;
+    margin-bottom: 50px;
     line-height: 2.05;
-    font-family: 'Montserrat', sans-serif;
-
 }
 
 .about-us__cards {
-    margin-top: 50px;
-    margin-left: 75px;
     gap: 32px;
 }
 
-.about-us__left-card {
+.about-us__left {
     position: relative;
-    width: 868px;
+    width: calc(50% - 16px);
     height: 622px;
     background-image: url(/assets/img/Rectangle.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
-.left-card__black-frame {
+.left__black-frame {
     position: absolute;
     z-index: 1;
     bottom: 0;
     background-image: url(/assets/img/Rectangle2.svg);
     fill: rgba(0, 0, 0, 0.5);
-    width: 868px;
-    height: 196px;
+    min-height: 196px;
+    right: 0;
+    left: 0;
 }
 
-.left-card__text{
-    width: 454px;
+.left__text {
+    max-width: 454px;
     color: var(--white);
-    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 200%;
     margin: 50px 0 50px 50px;
 }
 
-.left-card__btn {
-    position: absolute;
-    bottom: 68px;
-    right: 50px;
+.left__btn {
+    /* position: absolute; */
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 65px;
+    margin-right: 75px;
+    /* bottom: 68px;
+    right: 50px; */
     border: 3px solid var(--btn-color);
     padding: 19px 38px;
-    width: 175px;
+    min-width: 175px;
     height: 60px;
     color: var(--white);
-    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 16px;
     text-align: center;
+    transition: background .2s ease-in-out, 
+    border .2s ease-in-out;
+}
+/* <---------- X ----------> */
+
+
+/* СТИЛИЗАЦИЯ КНОПКИ РАЗДЕЛА "О НАС" */
+.left__btn:focus-visible {
+    outline: none;
+    background-color: var(--btn-color);
 }
 
-.about-us__right-cards {
+.left__btn:hover {
+    outline: none;
+    background-color: var(--btn-color);
+}
+
+.left__btn:active {
+    border-color: var(--btn-activ);
+    background-color: var(--btn-activ);
+}
+/* <---------- X ----------> */
+
+
+.about-us__right {
     gap: 32px;
     flex-flow: column;
+    width: calc(50% - 16px);
 }
 
-.about-us__two-card {
-    width: 870px;
-    height: 295px;
+.right__card {
+    width: 100%;
+    min-height: 295px;
     border: 1px solid var(--stroke);
 }
 
-.two-card__img {
+.right__img {
+    width: 190px;
+    height: 165px;
+    margin: 65px 0 65px 60px;
+    position: absolute;
+}
+
+.right__img_one {
     background-image: url(/assets/img/cube.svg);
     background-size: cover;
-    width: 190px;
-    height: 165px;
-    margin: 65px 0 65px 60px;
-    position: absolute;
 }
 
-.two-card__info {
+.right__info {
     position: relative;
-    margin-top: 65px;
-    margin-left: 300px;
+    padding: 65px 0 65px 300px;
 }
 
-.two-card__title {
-    font-family: 'Montserrat', sans-serif;
-    width: 452px;
+.right__title {
+    max-width: 452px;
+    margin: 0;
+    margin-bottom: 8px;
     font-weight: 700;
     font-size: 24px;
     color: var(--dark-gray);
-    margin: 0;
 }
 
-.two-card__text {
-    font-family: 'Montserrat', sans-serif;
+.right__text {
     font-weight: 400;
     margin: 0;
-    margin-top: 8px;
     font-size: 16px;
     color: var(--dark-gray);
-    width: 450px;
+    max-width: 450px;
     line-height: 2;
 }
 
-.about-us__three-card {
-    width: 870px;
-    height: 295px;
-    border: 1px solid var(--stroke);
-}
-
-.three-card__img {
+.right__img_two {
     background-image: url(/assets/img/gear.svg);
     background-size: cover;
-    position: absolute;
-    width: 190px;
-    height: 165px;
-    margin: 65px 0 65px 60px;
-}
-
-.three-card__title {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    font-weight: 700;
-    font-size: 24px;
-    color: var(--dark-gray);
-    width: 406px;
-}
-
-.three-card__text {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: var(--dark-gray);
-    margin: 0;
-    margin-top: 8px;
-    width: 450px;
-    line-height: 2;
 }
 /* <---------- X ----------> */
 
@@ -270,43 +369,75 @@
 /* <------ РАЗДЕЛ "РАСПИСАНИЕ" / "schedule" ------> */
 .schedule {
     width: 1772px;
+    margin-bottom: 100px;
+    padding: 0 75px;
 }
 
 .schedule__title {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 48px;
     color: var(--dark-gray);
-    width: 430px;
+    min-width: 430px;
     margin: 0;
-    margin-left: 75px;
-    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
-.schedule__steps {
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 50px;
-    margin-left: 75px;
-    gap: 71px;
-}
-
-/* schedule__button */
 .schedule__step {
+    cursor: pointer;
     font-weight: 400;
     font-size: 18px;
     color: var(--dark-gray);
+    margin-right: 85px;
+    border: 3px solid transparent;
+    padding: 3px;
+    transition: border .1s ease-in-out,
+    color .1s ease-in-out;
 }
 
-.schedule__consultation {
-    width: 1770px;
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 45px;
-    margin-left: 75px;
+
+/* СТИЛИЗАЦИЯ ТАБОВ РАЗДЕЛ "РАСПИСАНИЕ" */
+.schedule__step:focus-visible {
+    outline: none;
+    border-color: var(--btn-color);
+}
+
+.schedule__step:hover {
+    color: var(--btn-color);
+}
+
+.schedule__step:active {
+    color: var(--btn-activ);
+}
+/* <---------- X ----------> */
+
+
+/* ТАБЫ ЕСЛИ ЕЩЕ ПРИГОЛЯТСЯ! */
+.tab input[type="radio"] {
+    display: none;
+}
+
+.tab-content {
+    display: none;
+}
+
+#tab-btn-1:checked ~ #content-1,
+#tab-btn-2:checked ~ #content-2,
+#tab-btn-3:checked ~ #content-3,
+#tab-btn-4:checked ~ #content-4 {
+    display: flex;
     gap: 142px;
+}
+/* <---------- X ----------> */
+
+
+.schedule__consultation {
+    min-width: 1772px;
+    margin-top: 45px;
+    /* flex-wrap: wrap; */
 }
 
 .consultation__left-block {
-    width: 758px;
+    max-width: 758px;
 }
 
 .consultation__title {
@@ -314,24 +445,23 @@
     font-size: 24px;
     line-height: 133%;
     color: var(--dark-gray);
+    margin-bottom: 8px;
 }
 
 .consultation__text {
     margin: 0;
-    margin-top: 8px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 200%;
+    margin-bottom: 50px;
 }
 
 .consultation__btn {
-    margin-top: 50px;
     gap: 32px;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .consultation__btn--details {
+    cursor: pointer;
     padding: 20px 38px;
     width: 175px;
     background-color: var(--btn-color);
@@ -339,24 +469,430 @@
     font-weight: 700;
     font-size: 16px;
     text-align: center;
+    min-height: 60px;
+    transition: background .2s ease-in-out;
 }
 
+
+/* СТИЛИЗАЦИЯ КНОПКИ "ПОДРОБНЕЕ" РАЗДЕЛА "РАСПИСАНИЕ" */
+.consultation__btn--details:focus-visible {
+    outline: none;
+    background-color: var(--btn-pale);
+}
+
+.consultation__btn--details:hover {
+    outline: none;
+    background-color: var(--btn-pale);
+}
+
+.consultation__btn--details:active {
+    border: none;
+    background-color: var(--btn-activ);
+}
+/* <---------- X ----------> */
+
+
 .consultation__btn--contract {
-    border: 1px solid #333;
+    cursor: pointer;
+    border: 1px solid var(--dark-gray);
     padding: 20px 38px;
-    width: 147px;
+    min-width: 147px;
     color: var(--dark-gray);
     font-weight: 400;
     font-size: 16px;
     text-align: center;
+    min-height: 60px;
+    transition: background .2s ease-in-out,
+    color .2s ease-in-out;
 }
 
+
+/* СТИЛИЗАЦИЯ КНОПКИ "ДОГОВОР" РАЗДЕЛА "РАСПИСАНИЕ" */
+.consultation__btn--contract:focus-visible {
+    border: transparent;
+    background-color: var(--btn-grey);
+    color: var(--white);
+    outline: none;
+}
+
+.consultation__btn--contract:hover {
+    border: transparent;
+    background-color: var(--btn-grey);
+    color: var(--white);
+}
+
+.consultation__btn--contract:active {
+    border: transparent;
+    background-color: var(--btn-black);
+}
+/* <---------- X ----------> */
+
+
 .consultation__img {
-    background-image: url(/assets/img/consultation.svg);
     width: 870px;
     height: 460px;
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 10px;
+}
+/* <---------- X ----------> */
+
+
+
+/* <------ РАЗДЕЛ "ВОПРОСЫ" / "questions" (аккордеон) ------> */
+.questions {
+    padding: 0 75px;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.questions__title {
+    font-weight: 400;
+    font-size: 48px;
+    color: var(--dark-gray);
+    margin-bottom: 45px;
+}
+
+.faq__title {
+    display: flex;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    color: var(--dark-gray);
+    padding-bottom: 20px;
+    padding-top: 40px;
+    position: relative;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+    border-top: 1px solid transparent;
+    transition: color .2s ease-in-out,
+    border .2s ease-in-out;
+}
+
+.faq__title--one {
+    border-top-color: var(--border);
+}
+
+.faq__title:hover {
+    color: var(--btn-color);
+    border-bottom: 1px solid var(--btn-color);
+    border-top: 1px solid var(--btn-color);
+}
+
+.faq__title--one:hover {
+    color: var(--btn-color);
+    border-top: 1px solid var(--btn-color);
+}
+
+.faq__input {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    transition: color .2s ease-in-out,
+    border .2s ease-in-out;
+}
+
+.faq__title--img {
+    transition: transform .3s ease-in-out;
+}
+
+.faq__input:focus-visible ~ .faq__title {
+    color: var(--btn-color);
+    border-bottom: 1px solid var(--btn-color);
+    border-top: 1px solid var(--btn-color);
+}
+
+.faq__input:checked ~ .faq__text {
+    display: block;
+}
+
+.faq__input:checked ~ .faq__title .faq__title--img {
+    transform: rotate(45deg)
+}
+
+.faq__text {
+    display: none;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: var(--dark-gray);
+    max-width: 1003px;
+}
+
+.faq__item {
+    border-bottom: 1px solid var(--border);
+}
+/* <---------- X ----------> */
+
+
+/* <------ РАЗДЕЛ "FOOTER" ------> */
+.footer {
+    background-color: var(--footer-background);
+    min-height: 594px;
+}
+
+.footer__container {
+    padding: 50px 74px;
+    justify-content: space-between;
+    /* gap: 350px; */
+}
+
+.footer__nav {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__logo {
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.footer__logo-link:focus-visible {
+    outline: none;
+}
+
+.footer__nav_list {
+    list-style: none;
+    color: var(--stroke);
+    margin: 0;
+    padding: 0;
+    flex-direction: column; 
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 200%;
+    width: 265px;
+    margin-bottom: 82px;
+}
+
+.footer__nav_item-link {
+    padding: 3px;
+    border: 3px solid transparent;
+    transition: color .2s ease-in-out,
+    border .2s ease-in-out;
+}
+
+
+/* СТИЛИЗАЦИЯ СПИСКА НАВИГАЦИИ FOOTER */
+.footer__nav_item-link:focus-visible {
+    outline: none;
+    border: 3px solid var(--btn-color);
+}
+
+.footer__nav_item-link:hover {
+    outline: none;
+    color: var(--btn-color);
+}
+
+.footer__nav_item-link:active {
+    color: var(--btn-activ);
+    border: 3px solid transparent;
+}
+/* <---------- X ----------> */
+
+
+.footer__networks {
+    gap: 13px;
+    margin-bottom: 50px;
+}
+
+.footer__networking {
+    border: 3px solid transparent;
+    outline: none;
+    transition: border .2s ease-in-out;
+}
+
+.footer__networking-link svg {
+    padding: 3px;
+    fill: var(--net-link);
+    border: 3px solid transparent;
+    transition: fill .2s ease-in-out,
+    border .2s ease-in-out;
+}
+
+
+/* СТИЛИЗАЦИЯ ССЫЛОК НАВИГАЦИИ FOOTER */
+.footer__networking-link:focus-visible svg {
+    border-color: var(--btn-color);
+}
+
+.footer__networking-link:focus-visible {
+    outline: none;
+}
+
+.footer__networking:hover svg {
+    fill: var(--btn-color);
+}
+
+.footer__networking-link:active svg {
+    fill: var(--btn-activ);
+}
+
+.footer__networking:active {
+    border: 3px solid transparent;
+}
+/* <---------- X ----------> */
+
+
+/* <---------- X ----------> */
+
+.footer__applications {
+    flex-direction: column;
+    padding-left: 165px;
+}
+
+.applications__title {
+    font-weight: 400;
+    font-size: 48px;
+    color: var(--stroke);
+    width: 408px;
+    margin-bottom: 25px;
+}
+
+.applications__form {
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 32px;
+}
+
+.application__name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    width: 570px;
+    height: 60px;
+    background-color: var(--form-color);
+    border: none;
+    color: var(--white);
+    padding-left: 27px;
+}
+
+.application__email {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    width: 570px;
+    height: 60px;
+    background-color: var(--form-color);
+    border: none;
+    color: var(--white);
+    padding-left: 27px;
+}
+
+.application__message {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    width: 570px;
+    height: 150px;
+    background-color: var(--form-color);
+    border: none;
+    color: var(--white);
+    padding-left: 27px;
+	padding-top: 20px;
+}
+
+.appl-style {
+    transition: background .3s ease-in-out;
+}
+
+
+/* СТИЛИЗАЦИЯ ПОЛЯ INPUT B FOOTER */
+.appl-style:focus-visible {
+    background-color: var(--btn-grey);
+    outline: none;
+}
+
+.appl-style:hover {
+    background-color: var(--btn-grey);
+}
+/* <---------- X ----------> */
+
+
+.application__confirmation {
+    gap: 22px;
+    align-items: center;
+}
+
+.application__btn {
+    cursor: pointer;
+    padding: 19px 38px;
+    width: 269px;
+    height: 58px;
+    background-color: var(--btn-color);
+    color: var(--white);
+    transition: background .3s ease-in-out;
+}
+
+
+/* СТИЛИЗАЦИЯ КНОПКИ РАЗДЕЛА FOOTER "ОТПРАВИТЬ ДАННЫЕ" */
+.application__btn:focus-visible {
+    outline: none;
+    background-color: var(--btn-pale);
+}
+
+.application__btn:hover {
+    outline: none;
+    background-color: var(--btn-pale);
+}
+
+.application__btn:active {  
+    border: none;
+    background-color: var(--btn-activ);
+}
+/* <---------- X ----------> */
+
+
+.application__processing {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: var(--stroke);
+    accent-color: transparent;
+    /* transform: scale(1.1) */
+}
+
+/* label input {
+    display: none;
+}
+
+label span {
+    height: 12px;
+    width: 12px;
+    border: 1px solid gray;
+    display: inline-block;
+    position: relative;
+    background-color: #FFF;
+    border-radius: 2px;
+    padding: 3px;
+}
+
+[type=checkbox]:checked + span::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    font-size: 23px;
+    color: green;
+} */
+
+/* <---------- X ----------> */
+
+
+.footer__info {
+    padding-left: 48px;
+    width: 410px;
+    padding-top: 90px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: var(--stroke);
 }
 /* <---------- X ----------> */

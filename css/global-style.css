@@ -36,6 +36,7 @@
 
 html {
 	box-sizing: border-box;
+	scroll-padding-top: 100px;
 }
 
 *,
@@ -45,10 +46,24 @@ html {
 }
 
 :root {
+	--swiper-pagination-color: #FFFFFF;
+	--swiper-theme-color: rgba(255, 255, 255, 0.4);
+	--swiper-pagination-bullet-size: 15px;
+	--swiper-pagination-bullet-horizontal-gap: 11px;
 	--dark-gray: #333;
+	--footer-background: #222;
 	--btn-color: #FF9900;
+	--btn-activ: #e1670e;
+	--btn-pale: rgba(255, 153, 0, 0.7);
+	--btn-grey: #666;
+	--btn-black: #000;
 	--white: #FFFFFF;
 	--stroke: #CACACA;
+	--border: #cacaca;
+	--form-color: #414141;
+	--net-link: #7C7C7C;
+	--font: 'Montserrat',  sans-serif
+
 }
 
 h1, h2, h3 {
@@ -66,6 +81,10 @@ img {
 
 body {
 	font-family: 'font', sans-serif;
+	margin-top: 100px;
+	margin: 0 auto;
+    width: 100%;
+    font-family: var(--font);
 }
 
 .flex {
@@ -75,4 +94,18 @@ body {
 button {
 	background-color: transparent;
 	border: 0;
+}
+
+input::placeholder {
+	color: var(--stroke);
+}
+
+textarea::placeholder {
+	color: var(--stroke);
+	/* padding-left: 27px;
+	padding-top: 20px; */
+}
+
+textarea {
+	resize: none;
 }
