@@ -896,3 +896,7 @@ label span {
     color: var(--stroke);
 }
 /* <---------- X ----------> */
+
+.burger {
+    display: none;
+}
