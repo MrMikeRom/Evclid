@@ -52,4 +52,30 @@
     .header__search {
         margin-right: 28px;
         margin-top: 4px;
+    }
+
+    .order {
+        max-width: 924px;
+    }
+    
+    .order__title {
+        font-size: 60px;
+        line-height: 75px;
+        max-width: 770px;
+        padding: 258px 0 0 84px;
+    }
+
+    .order__text {
+        max-width: 660px;
+        font-size: 20px;
+        line-height: 24px;
+        margin: 13px 0 0 84px;
+    }
+
+    .order__btn {
+        min-width: 206px;
+        min-height: 43px;
+        font-size: 23px;
+        margin: 60px 0 160px 85px;
+    }
 }
