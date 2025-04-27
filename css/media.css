@@ -151,6 +151,7 @@
     /* <------ РАЗДЕЛ "РАСПИСАНИЕ" / "schedule" ------> */
     .schedule { 
         padding: 0 50px;
+        margin-bottom: 83px;
     }
 
     .schedule__title {
@@ -181,7 +182,34 @@
     .consultation__left-block {
         max-width: 437px;
     }
+
+    .consultation__img {
+        height: 100%;
+    }
     /* <---------- X ----------> */
 
+    /* <------ РАЗДЕЛ "ВОПРОСЫ" (аккордеон) ------> */
+    .questions {
+        padding: 0 50px;
+        margin-bottom: 100px;
+    }
 
+    .questions__title {
+        margin-bottom: 33px;
+    }
+
+    .faq__title {
+        font-size: 20px;
+        line-height: 160%;
+        padding-bottom: 24px;
+        padding-top: 35px;
+    }
+
+    .ppp {
+        margin: 0;
+        padding-right: 100px;
+    }
+
+
+    /* <---------- X ----------> */
 }

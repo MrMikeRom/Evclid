@@ -227,7 +227,7 @@
 
                     <div class="consultation__img">
                         <picture>
-                            <source srcset="/assets/img/tab-1-img2.png" media="(min-width: 1024px)" />
+                            <source srcset="/assets/img/tab-1-img2.png" media="(max-width: 1024px)" />
                             <img src="/assets/img/tab-1-img.png" alt="People at work in the office">
                         </picture>
                     </div>
@@ -252,8 +252,12 @@
                         </div>
                     </div>
 
-                    <div class="consultation__img"><img src="/assets/img/tab-2-img.png"
-                            alt="An employee draws up an estimate"></div>
+                    <div class="consultation__img">
+                        <picture>
+                            <source srcset="/assets/img/tab-1-img2.png" media="(max-width: 1024px)" />
+                            <img src="/assets/img/tab-2-img.png" alt="An employee draws up an estimate">
+                        </picture>
+                    </div>
                 </div>
 
                 <div class="schedule__consultation tab-content" id="content-3">
@@ -277,8 +281,12 @@
                         </div>
                     </div>
 
-                    <div class="consultation__img"><img src="/assets/img/tab-3-img.png"
-                            alt="The employee is looking for contractors"></div>
+                    <div class="consultation__img">
+                        <picture>
+                            <source srcset="/assets/img/tab-1-img2.png" media="(max-width: 1024px)" />
+                            <img src="/assets/img/tab-3-img.png" alt="The employee is looking for contractors">
+                        </picture>
+                    </div>
                 </div>
 
                 <div class="schedule__consultation tab-content" id="content-4">
@@ -299,7 +307,11 @@
                         </div>
                     </div>
 
-                    <div class="consultation__img"><img src="/assets/img/tab-4-img.png" alt="Photo of a neat workspace">
+                    <div class="consultation__img">
+                        <picture>
+                            <source srcset="/assets/img/tab-1-img2.png" media="(max-width: 1024px)" />
+                            <img src="/assets/img/tab-4-img.png" alt="Photo of a neat workspace">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -347,8 +359,9 @@
             <div class="faq">
                 <div class="faq__item">
                     <input type="checkbox" class="faq__input" id="faq__2">
-                    <label class="faq__title" for="faq__2">У&nbsp;меня есть свой проект. Сможем&nbsp;ли мы&nbsp;его
-                        доработать&nbsp;/ реализовать?
+                    <label class="faq__title" for="faq__2">
+                        <p class="ppp">У&nbsp;меня есть свой проект. Сможем&nbsp;ли мы&nbsp;его
+                            доработать&nbsp;/ реализовать?</p>
                         <svg class="faq__title--img" width="50" height="50" viewBox="0 0 50 50" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC" />
