@@ -90,6 +90,7 @@
     .about-us {
         padding-right: 35px;
         padding-left: 49px;
+        margin-bottom: 80px;
     }
     
     .about-us__title {
@@ -148,9 +149,38 @@
 
 
     /* <------ РАЗДЕЛ "РАСПИСАНИЕ" / "schedule" ------> */
+    .schedule { 
+        padding: 0 50px;
+    }
 
+    .schedule__title {
+        margin-bottom: 53px;
+    }
 
-    
+    .schedule__step {
+        margin-left: -6px;
+        margin-right: 77px;
+    }
+
+    .schedule__consultation {
+        max-width: 924px;
+        margin-top: 52px;
+    }
+
+    #tab-btn-1:checked ~ #content-1, 
+    #tab-btn-2:checked ~ #content-2, 
+    #tab-btn-3:checked ~ #content-3, 
+    #tab-btn-4:checked ~ #content-4 {
+        gap: 50px;
+    }
+
+    .consultation__text {
+        margin-bottom: 24px;
+    }
+
+    .consultation__left-block {
+        max-width: 437px;
+    }
     /* <---------- X ----------> */
 
 
