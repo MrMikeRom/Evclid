@@ -210,6 +210,45 @@
         padding-right: 100px;
     }
 
+    .footer {
+        max-height: 568px;
+        width: 1024px;
+    }
 
+    .footer__container {
+        padding: 25px 45px;
+    }
+
+    .footer__applications {
+        padding-left: 120px;
+    }
+
+    .applications__form {
+        gap: 18px;
+    }
+
+    .application__name {
+        width: 543px;
+        height: 67px;
+    }
+
+    .application__email {
+        width: 543px;
+        height: 67px;
+    }
+
+    .application__message {
+        width: 543px;
+        height: 153px;
+    }
+
+    .application__btn {
+        width: 243px;
+        height: 59px;
+    }
+
+    .footer__info {
+        display: none;
+    }
     /* <---------- X ----------> */
 }

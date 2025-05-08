@@ -636,7 +636,7 @@
 /* <------ РАЗДЕЛ "FOOTER" ------> */
 .footer {
     background-color: var(--footer-background);
-    min-height: 594px;
+    max-height: 594px;
 }
 
 .footer__container {
