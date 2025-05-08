@@ -368,7 +368,6 @@
 
 /* <------ РАЗДЕЛ "РАСПИСАНИЕ" / "schedule" ------> */
 .schedule {
-    width: 1772px;
     margin-bottom: 100px;
     padding: 0 75px;
 }
@@ -431,7 +430,6 @@
 
 
 .schedule__consultation {
-    min-width: 1772px;
     margin-top: 45px;
     /* flex-wrap: wrap; */
 }

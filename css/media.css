@@ -152,6 +152,7 @@
     .schedule { 
         padding: 0 50px;
         margin-bottom: 83px;
+        /* ВИНОВНИК СКРОЛЛА */
     }
 
     .schedule__title {
