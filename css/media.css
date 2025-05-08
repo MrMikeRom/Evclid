@@ -217,6 +217,8 @@
 
     .footer__container {
         padding: 25px 45px;
+        justify-content: flex-start;
+        gap: 3px;
     }
 
     .footer__applications {
@@ -224,27 +226,35 @@
     }
 
     .applications__form {
-        gap: 18px;
+        gap: 24px;
+    }
+
+    .applications__title {
+        margin-bottom: 29px;
     }
 
     .application__name {
-        width: 543px;
-        height: 67px;
+        width: 538px;
+        height: 60px;
     }
 
     .application__email {
-        width: 543px;
-        height: 67px;
+        width: 538px;
+        height: 60px;
     }
 
     .application__message {
-        width: 543px;
+        width: 538px;
         height: 153px;
     }
 
     .application__btn {
-        width: 243px;
+        width: 237px;
         height: 59px;
+    }
+
+    .application__confirmation {
+        gap: 25px;
     }
 
     .footer__info {
