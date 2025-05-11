@@ -263,3 +263,101 @@
     }
     /* <---------- X ----------> */
 }
+
+@media (max-width:768px) {
+    /* <------ ХЕДЕР / Заголовок сайта ------> */
+    .header {
+        max-height: 69px;
+    }
+
+    .burger {
+        margin-bottom: 4px;
+    }
+
+    .header__logo {
+        margin: 22px 0 0px -1px;
+    }
+
+    .header__search {
+        margin-top: 4px;
+    }
+    /* <---------- X ----------> */
+
+
+    /* <------ РАЗДЕЛ ЗАКАЗЫ ------> */
+    .order {
+        max-width: 668px;
+        max-height: 731px;
+    }
+
+    .order__title {
+        font-size: 50px;
+        line-height: 67px;
+        max-width: 588px;
+        padding: 222px 0 0 48px;
+    }
+
+    .order__text {
+        max-width: 588px;
+        font-size: 18px;
+        line-height: 22px;
+        margin: 11px 0 0 48px;
+    }
+
+    .order__btn {
+        margin: 60px 0 160px 47px;
+    }
+    /* <---------- X ----------> */
+    
+    
+    /* <------ РАЗДЕЛ "О НАС" / "ABOUT US" ------> */
+    .about-us__text {
+        max-width: 668px;
+        margin-bottom: 60px;
+    }
+
+    .about-us__left {
+        height: 649px;
+    }
+
+    .left__black-frame {
+        min-height: 196px;
+    }
+
+    .left__text {
+        padding-top: 34px;
+        padding-left: 41px;
+        max-width: 395px;
+    }
+
+    .left__btn {
+        margin-top: 68px;
+        margin-right: 35px;
+    }
+
+    .right__card {
+        max-height: 235px;
+    }
+
+    .right__img_one {
+        background-image: url(/assets/img/cube768px.svg);
+    }
+
+    .right__img_two {
+        background-image: url(/assets/img/gear768px.svg);
+    }
+
+
+
+    /* <---------- X ----------> */
+
+
+
+
+
+
+
+
+
+
+}
