@@ -57,6 +57,7 @@
     /* <---------- X ----------> */
 
 
+
     /* <------ РАЗДЕЛ ЗАКАЗЫ ------> */
     .order {
         max-width: 924px;
@@ -86,11 +87,12 @@
     /* <---------- X ----------> */
     
     
+
     /* <------ РАЗДЕЛ "О НАС" / "ABOUT US" ------> */
     .about-us {
         padding-right: 35px;
         padding-left: 49px;
-        margin-bottom: 80px;
+        margin-bottom: 83px;
     }
     
     .about-us__title {
@@ -148,6 +150,7 @@
     /* <---------- X ----------> */
 
 
+
     /* <------ РАЗДЕЛ "РАСПИСАНИЕ" / "schedule" ------> */
     .schedule { 
         padding: 0 50px;
@@ -188,6 +191,8 @@
         height: 100%;
     }
     /* <---------- X ----------> */
+
+
 
     /* <------ РАЗДЕЛ "ВОПРОСЫ" (аккордеон) ------> */
     .questions {
@@ -264,6 +269,8 @@
     /* <---------- X ----------> */
 }
 
+
+
 @media (max-width:768px) {
     /* <------ ХЕДЕР / Заголовок сайта ------> */
     .header {
@@ -282,6 +289,7 @@
         margin-top: 4px;
     }
     /* <---------- X ----------> */
+
 
 
     /* <------ РАЗДЕЛ ЗАКАЗЫ ------> */
@@ -310,6 +318,7 @@
     /* <---------- X ----------> */
     
     
+
     /* <------ РАЗДЕЛ "О НАС" / "ABOUT US" ------> */
     .about-us__text {
         max-width: 668px;
@@ -336,7 +345,7 @@
     }
 
     .right__card {
-        max-height: 235px;
+        min-height: 235px;
     }
 
     .right__img_one {
@@ -347,8 +356,16 @@
         background-image: url(/assets/img/gear768px.svg);
     }
 
+    .right__img {
+        width: 114px;
+        height: 99px;
+        margin: 68px 0 65px 40px;
+        position: absolute;
+    }
 
-
+    .right__info {
+        padding: 37px 0 32px 170px;
+    }
     /* <---------- X ----------> */
 
 
