@@ -162,9 +162,8 @@
         margin-bottom: 53px;
     }
 
-    .schedule__step {
-        margin-left: -6px;
-        margin-right: 77px;
+    .schedule__list {
+        gap: 77px;
     }
 
     .schedule__consultation {
@@ -366,6 +365,23 @@
     .right__info {
         padding: 37px 0 32px 170px;
     }
+    /* <---------- X ----------> */
+
+
+
+    /* РАЗДЕЛ "РАСПИСАНИЕ" / "schedule" */
+    .schedule__title {
+        margin-bottom: 50px;
+    }
+     
+    .schedule__list {
+        gap: 151px;
+    }
+
+
+
+
+
     /* <---------- X ----------> */
 
 

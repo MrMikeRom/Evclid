@@ -381,14 +381,19 @@
     margin-bottom: 50px;
 }
 
+.schedule__list {
+    display: flex;
+    gap: 85px;
+}
+
 .schedule__step {
+    width: 53px;
+    text-wrap: nowrap;
     cursor: pointer;
     font-weight: 400;
     font-size: 18px;
     color: var(--dark-gray);
-    margin-right: 85px;
     border: 3px solid transparent;
-    padding: 3px;
     transition: border .1s ease-in-out,
     color .1s ease-in-out;
 }
