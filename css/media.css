@@ -378,7 +378,15 @@
         gap: 151px;
     }
 
+    .schedule__consultation {
+        flex-flow: column-reverse;
+        margin-top: 37px;
+    }
 
+    .consultation__img {
+        width: 668px;
+        height: 284px;
+    }
 
 
 
